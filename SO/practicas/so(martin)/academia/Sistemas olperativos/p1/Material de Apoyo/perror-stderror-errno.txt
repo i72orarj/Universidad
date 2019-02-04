@@ -1,0 +1,4 @@
+http://www.tutorialspoint.com/c_standard_library/c_function_perror.htm
+http://www.beej.us/guide/bgnet/output/html/multipage/perrorman.html
+http://www.tutorialspoint.com/cprogramming/c_error_handling.htm
+http://www.java-samples.com/showtutorial.php?tutorialid=597

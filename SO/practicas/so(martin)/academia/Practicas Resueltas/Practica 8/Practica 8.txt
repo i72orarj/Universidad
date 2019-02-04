@@ -1,0 +1,12 @@
+Parque Jurásico consiste en un museo de dinosaurios y un parque
+para un paseo safari. Hay M visitantes al parque que desean
+hacer el paseo y N coches para realizarlo, cada uno de ellos con
+capacidad para 2 pasajeros. Los pasajeros deambulan durante un rato
+por el museo y luego hacen cola en la parada de los coches. Cuando
+un coche está disponible carga a sus 2 pasajeros y circula por el
+parque una cantidad de tiempo aleatoria. Si todos los coches están
+en uso, los pasajeros que desean usarlos esperan en la cola hasta
+que haya un coche disponible. Si el coche está disponible pero no
+hay pasajeros en espera el coche espera hasta que alguien desee
+subir. Si un coche está disponible y sólo hay un pasajero dispuesto
+a subir ambos deben esperar hasta que haya un segundo pasajero.

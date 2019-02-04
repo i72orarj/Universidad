@@ -1,0 +1,11 @@
+Esta práctica inicia el uso de la programación mediante hilos POSIX y el uso de los algoritmos software de solución de la sección crítica para 2 y N procesos.
+
+Los pasos a seguir son:
+
+1) Compilar y ejecutar el programa "hilos.c". Comprobar como el resultado de la suma no es correcto.
+
+2) Identificar la sección crítica del programa.
+
+3) Modificar el programa para que se ejecuten sólo 2 hilos. Aplicar los algoritmos de Dekker y Peterson para resolver el problema de la sección crítica del programa
+
+4) Modificar el programa para que se ejecuten 4 hilos. Aplicar el algoritmo de Lamport para para resolver el problema de la sección crítica del programa

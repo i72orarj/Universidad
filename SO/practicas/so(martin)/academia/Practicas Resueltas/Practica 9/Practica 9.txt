@@ -1,0 +1,8 @@
+Supóngase el problema de los productores/consumidores con búfer
+limitado. Supóngase que se tiene 1 productor, C consumidores y un
+tamaño del búfer de N ítems.
+
+Cada elemento del búfer tiene un campo de información y un campo
+entero que indica el consumidor que ha de obtener la información del ítem. Así, cada vez que el productor produce un ítem selecciona
+aleatoriamente un entero que corresponderá al índice de un
+consumidor. Sólo ese consumidor deberá consumir el ítem producido.

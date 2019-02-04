@@ -1,0 +1,61 @@
+Considérese el siguiente problema de productores/consumidores:
+
+a) Los procesos productores generan números aleatorios en el intervalo [0,1000] y los depositan en el búfer limitado de tamaño N.
+
+b) Los procesos consumidores leen los números depositados en el búfer y realizan las sumas sucesivas de los número leídos
+
+Solucionar el problema de programación concurrente según las siguientes formulaciones:
+
+1) Hay un único proceso productor y un único proceso consumidor.
+
+2) Hay P procesos productores y C procesos consumidores. Cada número generado por un productor es consumido por un único consumidor.
+
+3) Hay un proceso productor y C procesos consumidores. Cada número
+generado por el productor ha de ser consumido por TODOS los procesos consumidores.
+
+NOTA: Para comprobar la corrección de la solución programada los productores realizarán las sumas de los números que producen para comprobar si las sumas coinciden con las de los consumidores
+Las primitivas de semáforos POSIX son las siguientes.
+
+
+SEMÁFOROS
+---------
+
+Las primitivas de semáforos POSIX son las siguientes.
+
+La declaración de un semáforo se hace mediante el tipo:
+
+#include "semaphore.h"
+
+sem_t s;
+
+Los semáforos que vayan a compartir varios hilos se habrán de declarar
+como variables globales.
+
+Las primitivas estudiadas en teoría sobre semáforos se implementan en
+POSIX con las funciones:
+
+a) init (s, valor)
+
+int sem_init(sem_t *sem, int pshared, unsigned int value);
+
+pshared = 0 para todas las llamadas.
+
+Ejemplo: Iniciar un semáforo mutex a valor 1:
+
+#include "semaphore.h"
+
+sem_t mutex;
+
+sem_init (&mutex, 0, 1);
+
+b) wait (s)
+
+int sem_wait(sem_t * sem);
+
+Llamada: sem_wait (&s);
+
+c) signal (s)
+
+int sem_post(sem_t * sem);
+
+Llamada: sem_post(&s);

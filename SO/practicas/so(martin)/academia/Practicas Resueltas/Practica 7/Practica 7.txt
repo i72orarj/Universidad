@@ -1,0 +1,3 @@
+Implementar semáforos contadores utilizando semáforos binarios (tipo pthread_mutex).
+
+Utilizar esta implementación de semáforos contadores para resolver el problema de lectores/escritores con prioridad a escritores.

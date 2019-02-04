@@ -1,0 +1,23 @@
+Se va a realizar la simulación de un algoritmo de planificación del procesador en un sistema con 2 procesadores iguales. Para esta simulación se van a utilizar 4 hilos de ejecución diferentes.
+
+Para la planificación existe una única cola de preparados que comparten los cuatro hilos.
+
+Cada uno de los cuatro hilos realiza las siguientes tareas:
+
+Hilo 1: Simula la llegada de procesos al sistema. Este hilo llama a la función sleep() durante un intervalo de tiempo aleatorio. Cuando despierta añade a la cola de procesos un nuevo proceso con un tiempo de servicio aleatorio uniforme en el intervalo [0, M], donde M se fija por el usuario.
+
+Hilos 2 y 3: Simulan la planificación de un proceso. El hilo 2 utiliza un algoritmo FCFS y el hilo 3 un algoritmo SJF. Ambos comparten la misma cola. Una forma de simular la ejecución de un proceso es crear un hilo cuyo tiempo de ejecución sea igual al proceso a simular y esperar la finalización del hilo con pthread_join().
+
+Hilo 4: Obtiene información del tiempo de espera medio del sistema. Debe ser despertado por cada planificador cuando finaliza un proceso y por el creador de procesos cuando llega un nuevo proceso al sistema.
+
+Programar el sistema anterior con hilos POSIX. Se realizará con tres niveles de dificultad.
+
+a) Implementar el problema únicamente con el proceso de creación de procesos (hilo 1) y un sólo procesador (hilo 2).
+
+b) Añadir el segundo procesador (hilo 3).
+
+c) Añadir el hilo de obtención de estadísticas (hilo 4).
+
+Inicialmente la implementación se debe realizar con semáforos.
+Adicionalmente, como ejercicio de ampliación, se puede repetir el
+problema utilizando semáforos binarios y variables de condición.

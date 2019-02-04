@@ -1,0 +1,8 @@
+mplementar el problema del productor/consumidor utilizando variables de condición y los semáforos estrictamente necesarios.
+
+La implementación debe ser válida para C hilos consumidores y P hilos productores.
+
+Cada proceso proceso productor producirá números aleatorios en el intervalo [0, 10] que serán consumidos por los consumidores.
+
+
+NOTA: Basarse en la solución de este problema mediante monitores.

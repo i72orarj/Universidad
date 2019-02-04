@@ -1,0 +1,20 @@
+Práctica 3
+---------
+
+Esta práctica está dedicada el problema de la cena de los filósofos. Se han de realizar
+los siguientes ejercicios:
+
+1) Implementar la solución al problema de los filósofos para N filósofos utilizando semáforos.
+
+Durante el tiempo que un filósofo está comiendo o pensando permanecerá bloqueado un número aleatorio de segundos entre 0 y 10. Esto se realizará con la instrucción:
+
+sleep (random() % 10);
+
+2) Considerar que la comida total disponible para los filósofos ha de ser preparada en la cocina antes de poder ser servida. En este caso el problema tiene la siguiente formulación:
+
+- La comida se sirve y consume en unidades de comida.
+- Cuando un filósofo come consume una cantidad de comida de U unidades. U es un número aleatorio en el intervalo [0, 5].
+- Existe un proceso cocina que produce comida a intervalos regulares de 5 segundos. La cantidad producida cada vez es un valor aleatorio en el intervalo [0, 100].
+- Un filósofo no puede comer si no hay comida disponible. Un filósofo no termina de comer hasta que no consume la cantidad U.
+
+Implementar con semáforos un solución a este problema tomando como base la solución al problema estándar de los filósofos.

@@ -1,0 +1,3 @@
++++++++++++Esta escribiendo el primer hijo++++++++++
+-----------Esta escribiendo el segundo hijo----------
+**********Soy el padre*********
