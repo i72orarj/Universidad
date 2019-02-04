@@ -1,0 +1,28 @@
+select localidades.nombre,localidades.numerohabitantes
+from votantes,localidades
+where votantes.localidad=localidades.idlocalidad
+and fechanacimiento=(select min(fechanacimiento)
+from votantes);
+
+select nombrecompleto,fechanacimiento
+from votantes,localidades,provincias 
+where votantes.localidad=localidades.idlocalidad
+and localidades.provincia=provincias.idprovincia
+and comunidad='Andalucia'
+and fechanacimiento>(select fechacreacion
+from partidos
+where nombrecompleto='Partido Popular')
+order by fechanacimiento asc;
+
+
+select localidades.nombre,provincias.comunidad
+from localidades,provincias
+where provincias.idprovincia=localidades.provincia
+and localidades.numerohabitantes>(select numerohabitantes
+from votantes,localidades
+where votantes.localidad=localidades.idlocalidad
+and fechanacimiento=(select min(fechanacimiento)
+from votantes
+where fechanacimiento!=(select min(fechanacimiento)
+from votantes)))
+order by localidades.nombreg

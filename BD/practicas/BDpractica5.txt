@@ -1,0 +1,82 @@
+set serveroutput on;
+declare
+cursor c is select nombrecompleto
+	from votantes
+	where dni like concat('%',(localidad+1));
+nombresdata votantes.nombrecompleto%type;
+num number:=0;
+begin
+open c;
+loop
+fetch c into nombresdata;
+exit when c%notfound;
+dbms_output.put_line(nombresdata);
+num:=num+1;
+end loop;
+dbms_output.put_line('Hay un total de '||num||' votantes');
+end;
+
+set serveroutput on;
+declare
+cursor c is select votantes.nombrecompleto, decode(votantes.localidad,'1','Madrid','2','Madrid','3','Madrid',localidades.nombre) localidad
+from votantes,localidades
+where votantes.localidad=localidades.idlocalidad;
+num number:=0;
+begin
+for votantesdata in c loop
+dbms_output.put_line(votantesdata.nombrecompleto||' es de '||votantesdata.localidad);
+if votantesdata.localidad='Madrid' then num:=num+1;
+end if;
+end loop;
+dbms_output.put_line('Hay un total de '|| num ||' votantes de Madrid');
+end;
+
+
+
+set serveroutput on;
+declare
+cursor c is select dni
+from votantes
+order by dni desc;
+cursor c2 is select dni
+from votantes
+where dni!=(select max(dni)
+from votantes)
+order by dni desc;
+dni1 votantes.dni%type;
+dni2 votantes.dni%type;
+dniaux varchar2(10);
+begin
+open c;
+open c2;
+loop
+fetch c into dni1;
+fetch c2 into dni2;
+exit when c2%notfound;
+dbms_output.put_line(dni1||' va antes que '||dni2);
+dniaux:=dni2;
+end loop;
+dbms_output.put_line(dniaux||' es el menor');
+end;
+
+
+set serveroutput on;
+declare
+cursor c is select votante, count(votante) cantidad
+from consultas
+having count(votante)>(select avg(count(consultas.votante)) media
+from consultas
+group by votante)
+group by votante
+order by cantidad desc;
+begin
+for datos in c loop
+dbms_output.put_line(datos.votante||' ha participado '||datos.cantidad||' veces');
+end loop;
+end;
+
+
+
+
+
+

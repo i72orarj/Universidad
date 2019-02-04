@@ -1,0 +1,38 @@
+set serveroutput on;
+declare
+nombre votantes.nombrecompleto%type;
+correo votantes.email%type;
+mydni number:=30983712;
+begin
+select nombrecompleto, email
+into nombre,correo
+from votantes
+where dni=mydni;
+dbms_output.put_line(nombre||' con correo: '||correo);
+end;
+
+set serveroutput on;
+declare
+nombre votantes.nombrecompleto%type;
+correo votantes.email%type;
+mydni number:=30983712;
+begin
+select substr(nombrecompleto,1,4), email
+into nombre,correo
+from votantes
+where dni=mydni;
+dbms_output.put_line(nombre||' con correo: '||correo);
+end;
+
+set serveroutput on;
+declare
+nombre votantes.nombrecompleto%type:='Pepe';
+apellidos votantes.nombrecompleto%type;
+mydni number:=30983712;
+begin
+select substr(nombrecompleto,6,length(nombrecompleto)-4)
+into apellidos
+from votantes
+where dni=mydni;
+dbms_output.put_line(nombre||' '||apellidos);
+end;

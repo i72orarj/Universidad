@@ -1,0 +1,65 @@
+select nombrecompleto
+from votantes
+// where localidad+1=substr(dni,8,8);
+// where dni like concat('%',(localidad+1);//esta mejor
+
+select votantes.nombrecompleto, decode(votantes.localidad,'1','Madrid','2','Madrid','3','Madrid',localidades.nombre)
+from votantes,localidades
+where votantes.localidad=localidades.idlocalidad;
+
+select partidos.siglas
+from partidos, eventos_resultados
+where partidos.idpartido=eventos_resultados.partido
+having count(eventos_resultados.partido)=(
+select max(count(eventos_resultados.partido)) maximo
+from partidos, eventos_resultados
+where partidos.idpartido=eventos_resultados.partido
+group by partido)
+group by siglas;
+
+select dni
+from votantes
+where fechanacimiento=(select min(fechanacimiento)
+from votantes
+where fechanacimiento!=(select min(fechanacimiento)
+from votantes));
+
+select dni, count(consultas.votante) conteo
+from votantes, consultas
+where votantes.dni=consultas.votante
+group by votante
+order by conteo desc;
+
+select votante, count(votante) cantidad
+from consultas
+having count(votante)>(select avg(count(consultas.votante)) media
+from consultas
+group by votante)
+group by votante
+order by cantidad desc;
+
+select nombrecompleto
+from votantes,consultas
+where votantes.dni=consultas.votante
+having count(consultas.votante)>=(select avg(count(consultas.votante)) media
+from consultas
+group by votante)
+group by votante
+
+
+select dni,count(votante) conteo
+from votantes,consultas
+where votantes.dni=consultas.votante
+and votantes.dni!=(select dni
+from votantes
+where fechanacimiento=(select min(fechanacimiento)
+from votantes
+where fechanacimiento!=(select min(fechanacimiento)
+from votantes)))
+group by votante
+order by conteo desc;
+
+
+
+
+
