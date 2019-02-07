@@ -1,0 +1,8 @@
+0 56
+@
+1
+@
+LDQ 0
+IMPARQR 0
+HALT
+@

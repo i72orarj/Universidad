@@ -1,0 +1,28 @@
+$
+PC->MAR:t0
+PC+1->PC:t1
+M->GPR:t1+q1·t3+q3·t3
+GPR(OP)->OPR:t2
+GPR(AD)->MAR:t2
+0->ACC:q1·t3+q3·t3+q6·t3
+GPR+ACC->ACC:q1·t4+q3·t4+q4·t6+q6·t5·Qn'·Qn1
+M->QR:q2·t3+q4·t6
+Co2 ACC:q3·t5
+QR->GPR:q3·t5+q4·t5+q5·t4
+ACC->GPR:q3·t7
+GPR->QR:q3·t8
+QR->M:q4·t3
+0->QR:q4·t4+q5·t3
+GPR+1->GPR:q4·t7·Qn+q5·t7
+GPR->M:q4·t8+q5·t8
+ROL FA:q5·t5+q5·t7
+GPR'->GPR:q5·t6·F·Zsc+q5·t6·F·Zsc'
+0->Qn1:q6·t3
+GPR'+1+ACC->ACC:q6·t5·Qn·Qn1'
+ASHR AQ:q6·t6
+$
+SR+1->SR:t0+t1+t2+q1·t3+q3·t3+q3·t4+q3·t6+q3·t7+q4·t3+q4·t4+q4·t5+q4·t6+q4·t7·Qn+q4·t4·Qn'+q5·t3+q5·t4+q5·t5+q5·t6·F'·Zsc+q5·t6·F·Zsc+q5·t7+q6·t3+q6·t4+q6·t5·Qn'·Qn1'+q6·t5·Qn'·Qn1+q6·t5·Qn·Qn1'+q6·t5·Qn·Qn1+q6·t6
+LOAD SR:q1·t4-0+q2·t3-0+q3·t8-0+q4·t8-0+q5·t8-0+q5·t6·F'·Zsc'-5+q5·t6·F·Zsc'-5+q6·t7·Zsc'-4+q6·t7·Zsc-0
+SC-1->SC:q5·t5+q6·t5
+LOAD SC:q5·t3-16+q6·t3-16
+$

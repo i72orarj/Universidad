@@ -1,0 +1,6 @@
+$
+PC+1->PC:t1
+PC->MAR:t0
+M->GPR:t1+q1·t3+q3·t3
+$
+$

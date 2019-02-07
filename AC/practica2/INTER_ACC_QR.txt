@@ -1,0 +1,10 @@
+0 43
+1 25
+@
+2
+@
+LDA 0
+LDQ 1
+INTER_ACC_QR
+HALT
+@

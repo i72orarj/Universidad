@@ -1,0 +1,9 @@
+0 2
+1 FFFF
+@
+2
+@
+LDQ 0
+MUL 1
+HALT
+@
