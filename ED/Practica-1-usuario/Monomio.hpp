@@ -1,4 +1,4 @@
-/*! 
+/*!
 	\file Monomio.hpp
 	\brief Definición de la clase Monomio
 */
@@ -17,14 +17,15 @@
 // Se incluye la clase Monomio dentro del espacio de nombre de la asigantura: ed
 namespace ed
 {
-//!  Definición de la clase Monomio:  \f$ coeficiente \hspace{1ex} X^{grado} \f$ 
+//!  Definición de la clase Monomio:  \f$ coeficiente \hspace{1ex} X^{grado} \f$
 class Monomio
 {
 	//! \name Atributos privados de la clase Monomio
 	private:
 
-	// COMPLETAR
-
+		// COMPLETAR
+		float coeficiente_;
+		int grado_;
 
 	//! \name Funciones o métodos públicos de la clase Monomio
 	public:
@@ -32,20 +33,43 @@ class Monomio
 	//! \name Constructores de la clase Monomio
 
 	// COMPLETAR
+		/*Monomio(float coeficiente=0.0,int grado=0){
+			if(grado>=0){
+				setGrado(grado);
+				setCoeficiente(coeficiente);
+			}
+		}*/
+		Monomio(float coeficiente=0.0,int grado=0){
+			#ifndef NDEBUG
+			assert(grado>=0);
+			#endif
+			setCoeficiente(coeficiente);
+			setGrado(grado);
+			#ifndef NDEBUG
+			assert(std::abs(getCoeficiente()-coeficiente)<COTA_ERROR);
+			assert(getGrado()==grado);
+			#endif
+		}
+
+
+		Monomio(Monomio &m){
+			setCoeficiente(m.getCoeficiente());
+			setGrado(m.getGrado());
+		}
 
 
 
 	//! \name Observadores: funciones de consulta de la clase Monomio
 
 	// COMPLETAR
-
-
+		inline float getCoeficiente()const{return coeficiente_;};
+		inline int getGrado()const{return grado_;};
 
 	//! \name Funciones de modificación de la clase Monomio
 
 	// COMPLETAR
-
-
+		inline void setCoeficiente(const float c){coeficiente_=c;};
+		inline void setGrado(const int g){grado_=g;};
 
 	/////////////////////////////////////////////////
 
@@ -64,7 +88,9 @@ class Monomio
 
 		// COMPLETAR LOS COMENTARIOS DE DOXYGEN
 		Monomio & operator+=(Monomio const &m);
-
+		Monomio & operator-=(Monomio const &m);
+		Monomio & operator*=(Monomio const &m);
+		Monomio & operator/=(Monomio const &m);
 
 		// COMPLETAR EL RESTO DE OPERADORES
 

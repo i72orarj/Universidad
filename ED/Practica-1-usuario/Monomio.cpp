@@ -1,4 +1,4 @@
-/*! 
+/*!
    \file  Monomio.cpp
    \brief Fichero que contiene el código de las funciones de la clase Monomio
 */
@@ -15,9 +15,8 @@
 
 ed::Monomio & ed::Monomio::operator=(ed::Monomio const &m)
 {
-	// COMPLETAR
-
-
+	setCoeficiente(m.getCoeficiente());
+	setGrado(m.getGrado());
 	// Se devuelve el objeto actual
 	return *this;
 }
@@ -25,8 +24,8 @@ ed::Monomio & ed::Monomio::operator=(ed::Monomio const &m)
 
 ed::Monomio & ed::Monomio::operator=(double const &x)
 {
-	// COMPLETAR
-
+	setCoeficiente(x);
+	setGrado(0);
 	// Se devuelve el objeto actual
 	return *this;
 }
@@ -41,13 +40,43 @@ ed::Monomio & ed::Monomio::operator=(double const &x)
 
 ed::Monomio & ed::Monomio::operator+=(ed::Monomio const &m)
 {
-	// COMPLETAR
-
-
+	#ifndef NDEBUG
+	assert(getGrado()==m.getGrado());
+	#endif
+	setCoeficiente(getCoeficiente()+m.getCoeficiente());
+	//setGrado(getGrado()+m.getGrado());
+	#ifndef NDEBUG
+	#endif
 	// Se devuelve el objeto actual
 	return *this;
 }
+ed::Monomio & ed::Monomio::operator-=(ed::Monomio const &m){
+	#ifndef NDEBUG
+	assert(getGrado()==m.getGrado());
+	#endif
+	setCoeficiente(getCoeficiente()-m.getCoeficiente());
+	//setGrado(getGrado()+m.getGrado());
+	#ifndef NDEBUG
+	#endif
+	// Se devuelve el objeto actual
+	return *this;
+}
+ed::Monomio & ed::Monomio::operator*=(ed::Monomio const &m){
+	setCoeficiente(getCoeficiente()*m.getCoeficiente());
+	setGrado(getGrado()+m.getGrado());
+	#ifndef NDEBUG
+	#endif
+	// Se devuelve el objeto actual
+	return *this;
+}
+ed::Monomio & ed::Monomio::operator/=(ed::Monomio const &m){
+	assert(m.getGrado()<=getGrado());
+	assert(m.getCoeficiente()!=0.0);
+	setCoeficiente(getCoeficiente()/m.getCoeficiente());
+	setGrado(getGrado()-m.getGrado());
+	return *this;
 
+}
 
 
 // COMPLETAR EL RESTO DE OPERADORES
@@ -66,4 +95,3 @@ ed::Monomio & ed::Monomio::operator+=(ed::Monomio const &m)
 // Funciones auxiliares de la clase Monomio
 
 // COMPLETAR
-
