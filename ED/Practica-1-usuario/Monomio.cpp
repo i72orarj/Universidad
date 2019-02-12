@@ -87,11 +87,46 @@ ed::Monomio & ed::Monomio::operator/=(ed::Monomio const &m){
 
 // Funciones lectura y escritura de la clase Monomio
 
-// COMPLETAR
+ed::Monomio ed::Monomio::leerMonomio(){
+	double c;
+	int g;
+	std::cout << "Introduzca el coeficiente: " ;
+	std::cin >> c;
+	//m.setCoeficiente(c);
+	std::cout << "Introduzca el grado: " ;
+	std::cin >> g;
+	//m.setGrado(g);
+	ed::Monomio m(c,g);
+	assert(m.getGrado()>=0);
+	return m;
+}
+void ed::Monomio::escribirMonomio(const ed::Monomio &m){
+	if(m.getCoeficiente()==1){
+		std::cout << "X" <<getGrado()<< '\n';
+	}
+	else if(m.getCoeficiente()==-1){
+		std::cout << "-X"<<getGrado()<<'\n' ;
+	}
+	else{
+		if(m.getGrado()==0){
+			std::cout << getCoeficiente() << '\n';
+		}
+		else if(m.getGrado()==1){
+			std::cout << getCoeficiente()<<"X" << '\n';
+		}
+		else{
+			std::cout << getCoeficiente()<<"X"<<getGrado() << '\n';
+		}
+
+	}
+}
+
 
 
 ///////////////////////////////////////////////////////////////////////
 
 // Funciones auxiliares de la clase Monomio
 
-// COMPLETAR
+double ed::Monomio::calcularValor(const double &x){
+	return getCoeficiente()*pow(x,getGrado());
+}

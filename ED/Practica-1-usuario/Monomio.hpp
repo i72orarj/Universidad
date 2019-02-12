@@ -24,7 +24,7 @@ class Monomio
 	private:
 
 		// COMPLETAR
-		float coeficiente_;
+		double coeficiente_;
 		int grado_;
 
 	//! \name Funciones o métodos públicos de la clase Monomio
@@ -33,13 +33,13 @@ class Monomio
 	//! \name Constructores de la clase Monomio
 
 	// COMPLETAR
-		/*Monomio(float coeficiente=0.0,int grado=0){
+		/*Monomio(double coeficiente=0.0,int grado=0){
 			if(grado>=0){
 				setGrado(grado);
 				setCoeficiente(coeficiente);
 			}
 		}*/
-		Monomio(float coeficiente=0.0,int grado=0){
+		Monomio(double coeficiente=0.0,int grado=0){
 			#ifndef NDEBUG
 			assert(grado>=0);
 			#endif
@@ -62,13 +62,13 @@ class Monomio
 	//! \name Observadores: funciones de consulta de la clase Monomio
 
 	// COMPLETAR
-		inline float getCoeficiente()const{return coeficiente_;};
+		inline double getCoeficiente()const{return coeficiente_;};
 		inline int getGrado()const{return grado_;};
 
 	//! \name Funciones de modificación de la clase Monomio
 
 	// COMPLETAR
-		inline void setCoeficiente(const float c){coeficiente_=c;};
+		inline void setCoeficiente(const double c){coeficiente_=c;};
 		inline void setGrado(const int g){grado_=g;};
 
 	/////////////////////////////////////////////////
@@ -99,13 +99,15 @@ class Monomio
 
 	//! \name Funciones lectura y escritura de la clase Monomio
 
-	// COMPLETAR
+	Monomio leerMonomio();
+	void escribirMonomio(const Monomio &m);
 
 
 	///////////////////////////////////////////////////////////////////////
 
 	//! \name Funciones auxiliares de la clase Monomio
 
+	double calcularValor(const double &x);
 	// COMPLETAR
 
 
