@@ -69,7 +69,12 @@ class Monomio
 
 	// COMPLETAR
 		inline void setCoeficiente(const double c){coeficiente_=c;};
-		inline void setGrado(const int g){grado_=g;};
+		inline void setGrado(const int g){
+			#ifndef NDEBUG
+			assert(g>=0);
+			#endif
+			grado_=g;
+		};
 
 	/////////////////////////////////////////////////
 
@@ -100,7 +105,7 @@ class Monomio
 	//! \name Funciones lectura y escritura de la clase Monomio
 
 	Monomio leerMonomio();
-	void escribirMonomio(const Monomio &m);
+	void escribirMonomio()const;
 
 
 	///////////////////////////////////////////////////////////////////////

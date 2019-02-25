@@ -64,14 +64,16 @@ ed::Monomio & ed::Monomio::operator-=(ed::Monomio const &m){
 ed::Monomio & ed::Monomio::operator*=(ed::Monomio const &m){
 	setCoeficiente(getCoeficiente()*m.getCoeficiente());
 	setGrado(getGrado()+m.getGrado());
-	#ifndef NDEBUG
-	#endif
+	//#ifndef NDEBUG
+	//#endif
 	// Se devuelve el objeto actual
 	return *this;
 }
 ed::Monomio & ed::Monomio::operator/=(ed::Monomio const &m){
+	#ifndef NDEBUG
 	assert(m.getGrado()<=getGrado());
 	assert(m.getCoeficiente()!=0.0);
+	#endif
 	setCoeficiente(getCoeficiente()/m.getCoeficiente());
 	setGrado(getGrado()-m.getGrado());
 	return *this;
@@ -96,22 +98,23 @@ ed::Monomio ed::Monomio::leerMonomio(){
 	std::cout << "Introduzca el grado: " ;
 	std::cin >> g;
 	//m.setGrado(g);
-	ed::Monomio m(c,g);
-	assert(m.getGrado()>=0);
-	return m;
+	this->setGrado(g);
+	this->setCoeficiente(c);
+	//assert(m.getGrado()>=0);
+	return *this;
 }
-void ed::Monomio::escribirMonomio(const ed::Monomio &m){
-	if(m.getCoeficiente()==1){
+void ed::Monomio::escribirMonomio()const {
+	if(this->getCoeficiente()==1){
 		std::cout << "X" <<getGrado()<< '\n';
 	}
-	else if(m.getCoeficiente()==-1){
+	else if (std::abs(this->getCoeficiente()-1)<COTA_ERROR){
 		std::cout << "-X"<<getGrado()<<'\n' ;
 	}
 	else{
-		if(m.getGrado()==0){
+		if(this->getGrado()==0){
 			std::cout << getCoeficiente() << '\n';
 		}
-		else if(m.getGrado()==1){
+		else if(this->getGrado()==1){
 			std::cout << getCoeficiente()<<"X" << '\n';
 		}
 		else{
