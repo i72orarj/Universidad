@@ -80,6 +80,24 @@ ed::Monomio & ed::Monomio::operator/=(ed::Monomio const &m){
 
 }
 
+ed::Monomio & ed::Monomio::operator*=(const double x){
+	setCoeficiente(getCoeficiente()*x);
+	//setGrado(getGrado()+m.getGrado());
+	//#ifndef NDEBUG
+	//#endif
+	// Se devuelve el objeto actual
+	return *this;
+}
+ed::Monomio & ed::Monomio::operator/=(const double x){
+	#ifndef NDEBUG
+	//assert(m.getGrado()<=getGrado());
+	assert(m.getCoeficiente()!=0.0);
+	#endif
+	setCoeficiente(getCoeficiente()/m.getCoeficiente());
+	//setGrado(getGrado()-m.getGrado());
+	return *this;
+
+}
 
 // COMPLETAR EL RESTO DE OPERADORES
 
