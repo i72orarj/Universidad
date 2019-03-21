@@ -1,0 +1,19 @@
+[2019-03-20, 09:42:36] ==> caracola
+
+[2019-03-20, 09:42:36] ==> Recibido el mensaje: Empareja
+[2019-03-20, 09:43:06] ==> pepe
+
+[2019-03-20, 09:43:06] ==> Recibido el mensaje: No Empareja
+[2019-03-20, 09:43:14] ==> ola
+
+[2019-03-20, 09:43:14] ==> Recibido el mensaje: Empareja
+[2019-03-20, 09:43:22] ==> exit
+
+[2019-03-20, 10:57:20] ==> ola
+
+[2019-03-20, 10:57:20] ==> Recibido el mensaje: Empareja
+[2019-03-20, 10:57:38] ==> ilil
+
+[2019-03-20, 10:57:38] ==> Recibido el mensaje: No Empareja
+[2019-03-20, 10:57:47] ==> Capturada la señal 2
+[2019-03-20, 10:57:47] ==> Fin de sesion

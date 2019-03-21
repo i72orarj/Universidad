@@ -1,0 +1,17 @@
+[2019-03-20, 09:42:17] ==> Valor de regexvalue en servidor:ola
+[2019-03-20, 09:42:36] ==> Recibido el mensaje: caracola
+
+[2019-03-20, 09:42:36] ==> Empareja
+[2019-03-20, 09:43:06] ==> Recibido el mensaje: pepe
+
+[2019-03-20, 09:43:06] ==> No empareja
+[2019-03-20, 09:43:14] ==> Recibido el mensaje: ola
+
+[2019-03-20, 09:43:14] ==> Empareja
+[2019-03-20, 10:57:10] ==> Valor de regexvalue en servidor:ola
+[2019-03-20, 10:57:20] ==> Recibido el mensaje: ola
+
+[2019-03-20, 10:57:20] ==> Empareja
+[2019-03-20, 10:57:38] ==> Recibido el mensaje: ilil
+
+[2019-03-20, 10:57:38] ==> No empareja
