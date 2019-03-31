@@ -52,7 +52,7 @@ class Monomio
 		}
 
 
-		Monomio(Monomio &m){
+		Monomio(const Monomio &m){
 			setCoeficiente(m.getCoeficiente());
 			setGrado(m.getGrado());
 		}
