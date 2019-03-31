@@ -17,6 +17,7 @@
 
 #include "PolinomioInterfaz.hpp"
 #include "../Practica-1-i72orarj/Monomio.hpp"
+#include "../Practica-1-i72orarj/operadoresExternosMonomios.hpp"
 #include "auxiliar_ordenacion.hpp"
 
 
@@ -42,7 +43,7 @@ class Polinomio//: public ed::PolinomioInterfaz
     //list_.clear();
     this->list_.push_back(*m);
     #ifndef NDEBUG
-    assert(!esNulo());
+    //assert(!esNulo());
     #endif
   }
   inline Polinomio(const Polinomio &p){
@@ -106,24 +107,32 @@ class Polinomio//: public ed::PolinomioInterfaz
 	//! \name Funciones de modificación de la clase Polinomio
 
   void sumarRepetidos(){
-    int g=getGrado();
-    Monomio v[g];
+    int g=getGrado()+1;
+    double v[g];
+    Monomio m;
+    int aux;
+    for(int i=0;i<g;i++){
+      v[i]=0;
+    }
     std::list<Monomio>::iterator it;
     for(it=list_.begin();it!=list_.end();it++){
-      v[(*it).getGrado()]+=(*it);
+      aux=(*it).getGrado();
+      v[aux]=v[aux]+(*it).getCoeficiente();
     }
     list_.clear();
     for(int i=0;i<g;i++){
-      list_.push_back(v[i]);
+      if(v[i]!=0){
+        m.setGrado(i);
+        m.setCoeficiente(v[i]);
+        list_.push_back(m);
+      }
     }
   }
 
   void setList(std::list<Monomio> &l){
     list_=l;
   }
-  void sort(){
-    list_.sort(grado);
-  }
+  void sort();
 
  	////////////////////////////////////////////////////////////////
 

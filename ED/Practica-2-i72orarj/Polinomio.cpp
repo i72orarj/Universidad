@@ -15,7 +15,13 @@
 #include "../Practica-1-i72orarj/operadoresExternosMonomios.hpp"
 
 // Operadores de asignación
+bool grado(const ed::Monomio &a, const ed::Monomio &b){
+	return (a.getGrado()<b.getGrado());
+}
 
+void ed::Polinomio::sort(){
+	list_.sort(grado);
+}
 /////////////////////////////////////////////////////////////
 
 ed::Polinomio & ed::Polinomio::operator=(ed::Polinomio &p)
@@ -304,18 +310,46 @@ void ed::Polinomio::leerPolinomio(){
 	Monomio m;
 	std::cout << "Introduzca el numero de monomios del Polinomio" << '\n';
 	std::cin >> n;
+	this->list_.clear();
 	for(int i=0;i<n;i++){
 		m.leerMonomio();
 		this->list_.push_back(m);
 	}
+	std::cout << "antes de repetidos" << '\n';
+	for(std::list<Monomio>::iterator it=list_.begin();it!=list_.end();it++){
+		std::cout << "coeficiente "<<(*it).getCoeficiente()<<" - grado "<<(*it).getGrado() << '\n';
+	}
+	std::cout << "despues de repetidos" << '\n';
+	this->sumarRepetidos();
+	for(std::list<Monomio>::iterator it2=list_.begin();it2!=list_.end();it2++){
+		std::cout << "coeficiente " <<(*it2).getCoeficiente()<<" - grado "<<(*it2).getGrado() << '\n';
+	}
 	this->sort();
+	std::cout << "despues de sort" << '\n';
+	for(std::list<Monomio>::iterator it3=list_.begin();it3!=list_.end();it3++){
+		std::cout << "coeficiente "<<(*it3).getCoeficiente()<<" - grado "<<(*it3).getGrado() << '\n';
+	}
 }
 void ed::Polinomio::escribirPolinomio(){
 	std::list<Monomio>::iterator it;
-	for(it=this->list_.begin();it!=this->list_.end();it++){
-		(*it).escribirMonomio();
-		if(it++!=this->list_.end()){
-			std::cout << " + " ;
+	/*if(this->list_.size()==1){
+		this->list_.front().escribirMonomio();
+	}
+	else{
+		for(it=this->list_.begin();it!=this->list_.end();it++){
+			(*it).escribirMonomio();
+			if(it++!=this->list_.end()){
+				std::cout << " + " ;
+				//it--;
+			}
+		}
+	}*/
+	it=this->list_.begin();
+	(*it).escribirMonomio();
+	if(this->list_.size()!=1){
+		for(it++;it!=this->list_.end();it++){
+			std::cout << " + ";
+			(*it).escribirMonomio();
 		}
 	}
 }
