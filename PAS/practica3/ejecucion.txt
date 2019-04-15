@@ -1,0 +1,14 @@
+ejercicio1.sh:
+  ./ejercicio1.sh ejemploCarpeta/
+ejercicio2.sh:
+  ./ejercicio2.sh ejemploCarpeta/ numeroBytes
+  ./ejercicio2.sh ejemploCarpeta/
+ejercicio3.sh:
+  ./ejercicio3.sh ejemploCarpeta/ umbral1 umbral2
+  ./ejercicio3.sh ejemploCarpeta/
+ejercicio4.sh:
+  ./ejercicio4.sh
+ejercicio5.sh:
+  ./ejercicio5.sh ejemploCarpeta/
+ejercicio6.sh:
+  ./ejercicio6.sh ejemploCarpeta/
