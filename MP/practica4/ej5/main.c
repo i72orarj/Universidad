@@ -33,7 +33,7 @@ int main(int argc, char const *argv[]) {
           }
           else{
             push(&cabeza,codigo);
-            cabeza=cabeza->sig;
+            // cabeza=cabeza->sig;
           }
         }
 

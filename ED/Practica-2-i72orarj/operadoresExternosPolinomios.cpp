@@ -598,10 +598,14 @@ ed::Polinomio & operator+(double const &x,  ed::Polinomio const &p)
 // Sobrecarga del operador de entrada
 istream &operator>>(istream &stream, Polinomio &p)
 {
-	std::list<Monomio>::iterator it;
-	for(it=p.getList().begin();it!=p.getList().end();it++){
-		stream>>(*it);
+	std::list<Monomio> auxlist;
+	Monomio m(1.1,1);
+	while(m.getCoeficiente()!=0){
+		stream>>m;
+		auxlist.push_back(m);
 	}
+	p.setList(auxlist);
+	p.sumarRepetidos();
 	// Se devuelve el flujo de entrada
   return stream;
 }
@@ -609,7 +613,7 @@ istream &operator>>(istream &stream, Polinomio &p)
 
 
 // Sobrecarga del operador de salida
-ostream &operator<<(ostream &stream, Polinomio const &p)
+ostream &operator<<(ostream &stream, Polinomio &p)
 {
 	std::list<Monomio>::iterator it;
 	for(it=p.getList().begin();it!=p.getList().end();it++){

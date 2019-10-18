@@ -526,7 +526,7 @@ void ed::operadoresExternosPolinomios()
 
 
 	/////////////////
-	std::cout << BIGREEN;
+	/*std::cout << BIGREEN;
 	std::cout<< "Escritura de polinomios usando los operadores de flujo" << std::endl;
 	std::cout << RESET;
 
@@ -539,7 +539,7 @@ void ed::operadoresExternosPolinomios()
 	std::cout << "ENTER";
 	std::cout << RESET;
 	// Pausa
-	std::cin.ignore();
+	std::cin.ignore();*/
 
 
 	// Operadores que no son miembros de la clase

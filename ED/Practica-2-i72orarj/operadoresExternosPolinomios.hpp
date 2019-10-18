@@ -104,7 +104,7 @@ namespace ed
    //! \name Sobrecarga de los operadores de flujo de la clase Polinomio.
 
     // COMPLETAR LOS COMENTARIOS DE DOXYGEN
-    ostream &operator<<(ostream &stream, ed::Polinomio const &p);
+    ostream &operator<<(ostream &stream, ed::Polinomio &p);
 
     // COMPLETAR LOS COMENTARIOS DE DOXYGEN
     istream &operator>>(istream &stream, ed::Polinomio &p);

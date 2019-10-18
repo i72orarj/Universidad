@@ -35,8 +35,8 @@ namespace ed
 			}
 			//reservando memoria dinamica para n elemntos en vector y en matriz
 		}
-		Grafo(const Grafo<G_Nodo,G_Lado>* &g){
-			*this=*g;
+		Grafo(const Grafo<G_Nodo,G_Lado> &g){
+			*this=g;
 		}
 		// destructor
 		~Grafo(){
@@ -72,10 +72,10 @@ namespace ed
 			}
 			delete[] _lados;
 		}
-		Grafo &operator =(const Grafo<G_Nodo,G_Lado>* &g){
-			this->setNodos(g->getNodos());
-			this->setLados(g->getLados());
-			this->setDimension(g->getDimension());
+		Grafo &operator =(const Grafo<G_Nodo,G_Lado> &g){
+			this->setNodos(g.getNodos());
+			this->setLados(g.getLados());
+			this->setDimension(g.getDimension());
 			return *this;
 		}
 		// bool cargarGrafo(Grafo<G_Nodo, G_Lado> * &g);

@@ -43,7 +43,7 @@ class Polinomio//: public ed::PolinomioInterfaz
     //list_.clear();
     this->list_.push_back(*m);
     #ifndef NDEBUG
-    //assert(!esNulo());
+    assert(!esNulo());
     #endif
   }
   inline Polinomio(const Polinomio &p){

@@ -315,20 +315,8 @@ void ed::Polinomio::leerPolinomio(){
 		m.leerMonomio();
 		this->list_.push_back(m);
 	}
-	std::cout << "antes de repetidos" << '\n';
-	for(std::list<Monomio>::iterator it=list_.begin();it!=list_.end();it++){
-		std::cout << "coeficiente "<<(*it).getCoeficiente()<<" - grado "<<(*it).getGrado() << '\n';
-	}
-	std::cout << "despues de repetidos" << '\n';
 	this->sumarRepetidos();
-	for(std::list<Monomio>::iterator it2=list_.begin();it2!=list_.end();it2++){
-		std::cout << "coeficiente " <<(*it2).getCoeficiente()<<" - grado "<<(*it2).getGrado() << '\n';
-	}
 	this->sort();
-	std::cout << "despues de sort" << '\n';
-	for(std::list<Monomio>::iterator it3=list_.begin();it3!=list_.end();it3++){
-		std::cout << "coeficiente "<<(*it3).getCoeficiente()<<" - grado "<<(*it3).getGrado() << '\n';
-	}
 }
 void ed::Polinomio::escribirPolinomio(){
 	std::list<Monomio>::iterator it;
