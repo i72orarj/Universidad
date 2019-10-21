@@ -67,11 +67,11 @@ main (int argc, char *argv[])
 	clock_t t_ini, t_fin;
 	int opcion=1,a,b,resultado;
 	double tiempo;
-	if (argc < 2) {
-		printf ("usage: %s server_host\n", argv[0]);
-		exit (1);
-	}
-	host = argv[1];
+	// if (argc < 2) {
+	// 	printf ("usage: %s server_host\n", argv[0]);
+	// 	exit (1);
+	// }
+	// host = argv[1];
 	do {
 		opcion=menu();
 		switch (opcion) {
