@@ -3,8 +3,8 @@
  * It was generated using rpcgen.
  */
 
-#ifndef _PRUEBA_H_RPCGEN
-#define _PRUEBA_H_RPCGEN
+#ifndef _PRUEBA2_H_RPCGEN
+#define _PRUEBA2_H_RPCGEN
 
 #include <rpc/rpc.h>
 
@@ -27,30 +27,12 @@ typedef struct operandos operandos;
 #define SUMA 1
 extern  int * suma_1(operandos *, CLIENT *);
 extern  int * suma_1_svc(operandos *, struct svc_req *);
-#define MULTIPLICACION 2
-extern  int * multiplicacion_1(operandos *, CLIENT *);
-extern  int * multiplicacion_1_svc(operandos *, struct svc_req *);
-#define DIVISION 3
-extern  double * division_1(operandos *, CLIENT *);
-extern  double * division_1_svc(operandos *, struct svc_req *);
-#define RESTA 4
-extern  int * resta_1(operandos *, CLIENT *);
-extern  int * resta_1_svc(operandos *, struct svc_req *);
 extern int calculadora_prog_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
 
 #else /* K&R C */
 #define SUMA 1
 extern  int * suma_1();
 extern  int * suma_1_svc();
-#define MULTIPLICACION 2
-extern  int * multiplicacion_1();
-extern  int * multiplicacion_1_svc();
-#define DIVISION 3
-extern  double * division_1();
-extern  double * division_1_svc();
-#define RESTA 4
-extern  int * resta_1();
-extern  int * resta_1_svc();
 extern int calculadora_prog_1_freeresult ();
 #endif /* K&R C */
 
@@ -68,4 +50,4 @@ extern bool_t xdr_operandos ();
 }
 #endif
 
-#endif /* !_PRUEBA_H_RPCGEN */
+#endif /* !_PRUEBA2_H_RPCGEN */

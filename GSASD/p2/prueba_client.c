@@ -5,10 +5,10 @@
  */
 
 #include "prueba.h"
-#include <time.h>
+
 
 void
-calculadora_prog_1(char *host, int a, int b)
+calculadora_prog_1(char *host,int a, int b)
 {
 	CLIENT *clnt;
 	int  *result_1;
@@ -19,6 +19,14 @@ calculadora_prog_1(char *host, int a, int b)
 	operandos  multiplicacion_1_arg;
 	multiplicacion_1_arg.a=a;
 	multiplicacion_1_arg.b=b;
+	double  *result_3;
+	operandos  division_1_arg;
+	division_1_arg.a=a;
+	division_1_arg.b=b;
+	int  *result_4;
+	operandos  resta_1_arg;
+	resta_1_arg.a=a;
+	resta_1_arg.b=b;
 
 #ifndef	DEBUG
 	clnt = clnt_create (host, CALCULADORA_PROG, CALCULADORA_VERS, "udp");
@@ -32,31 +40,25 @@ calculadora_prog_1(char *host, int a, int b)
 	if (result_1 == (int *) NULL) {
 		clnt_perror (clnt, "call failed");
 	}
-	printf("El resultado de la suma es: %d\n",*result_1 );
-	/*result_2 = multiplicacion_1(&multiplicacion_1_arg, clnt);
+	result_2 = multiplicacion_1(&multiplicacion_1_arg, clnt);
 	if (result_2 == (int *) NULL) {
 		clnt_perror (clnt, "call failed");
-	}*/
-	// printf("El resultado de la multiplicacion es: %d\n",*result_2 );
+	}
+	result_3 = division_1(&division_1_arg, clnt);
+	if (result_3 == (double *) NULL) {
+		clnt_perror (clnt, "call failed");
+	}
+	result_4 = resta_1(&resta_1_arg, clnt);
+	if (result_4 == (int *) NULL) {
+		clnt_perror (clnt, "call failed");
+	}
+	printf("El resultado de la suma es: %d\n",*result_1 );
+	printf("El resultado de la resta es: %d\n",*result_4 );
+	printf("El resultado de la multiplicacion es: %d\n",*result_2 );
+	printf("El resultado de la division es: %.2f\n",*result_3 );
 #ifndef	DEBUG
 	clnt_destroy (clnt);
 #endif	 /* DEBUG */
-}
-
-int menu(){
-	int opcion;
-	printf("#############################################\n");
-	printf("  1.- Sumar dos valores en local\n" );
-	printf("  2.- Sumar en servidor en la misma maquina\n" );
-	printf("  3.- Sumar en servidor en otra maquina\n" );
-	printf("  0.- Salir\n");
-	printf("#############################################\n");
-	scanf("%d",&opcion);
-	return opcion;
-}
-
-int sumar_local(int a, int b){
-	return a+b;
 }
 
 
@@ -64,73 +66,15 @@ int
 main (int argc, char *argv[])
 {
 	char *host;
-	clock_t t_ini, t_fin;
-	int opcion=1,a,b,resultado;
-	double tiempo;
-	// if (argc < 2) {
-	// 	printf ("usage: %s server_host\n", argv[0]);
-	// 	exit (1);
-	// }
-	// host = argv[1];
-	do {
-		opcion=menu();
-		switch (opcion) {
-			case 1:
-			printf("Introduzca el primer valor: ");
-			scanf("%d",&a );
-			printf("Introduzca el segundo valor: ");
-			scanf("%d",&b );
-			t_ini=clock();
-			for(int i=0;i<100000;i++){
-				resultado=sumar_local(a,b);
-			}
-			t_fin=clock();
-			tiempo=(double)(t_fin-t_ini)/CLOCKS_PER_SEC;
-			printf("Tiempo empleado: %f\n",tiempo );
-			break;
-			case 2:
-			host="localhost";
-			printf("Introduzca el primer valor: ");
-			scanf("%d",&a );
-			printf("Introduzca el segundo valor: ");
-			scanf("%d",&b );
-			t_ini=clock();
-			for(int i=0;i<100000;i++){
-				calculadora_prog_1 (host,a,b);
-			}
-			t_fin=clock();
-			tiempo=(double)(t_fin-t_ini)/CLOCKS_PER_SEC;
-			printf("Tiempo empleado: %.2f\n",tiempo );
-			break;
-			case 3:
-			printf("Introduzca IP del servidor: " );
-			scanf("%s",host );
-			printf("Introduzca el primer valor: ");
-			scanf("%d",&a );
-			printf("Introduzca el segundo valor: ");
-			scanf("%d",&b );
-			t_ini=clock();
-			for(int i=0;i<100000;i++){
-				calculadora_prog_1 (host,a,b);
-			}
-			t_fin=clock();
-			tiempo=(double)(t_fin-t_ini)/CLOCKS_PER_SEC;
-			printf("Tiempo empleado: %.2f\n",tiempo );
-			break;
-			case 0:
-			printf("Saliendo...\n" );
-			break;
-			default:
-			printf("Opcion incorrecta\n");
-			break;
-		}
-	} while(opcion!=0);
-	/*t_ini=clock();
-	for(int i=0;i<100000;i++){
-		calculadora_prog_1 (host,atoi(argv[2]),atoi(argv[3]));
+	int a,b;
+	if (argc < 2) {
+		printf ("usage: %s server_host\n", argv[0]);
+		exit (1);
 	}
-	t_fin=clock();
-	double tiempo=(double)(t_fin-t_ini)/CLOCKS_PER_SEC;
-	printf("Tiempo empleado: %.2f\n",tiempo );*/
+	host = argv[1];
+	printf("Introduzca dos valores: \n" );
+	scanf("%d",&a );
+	scanf("%d",&b );
+	calculadora_prog_1 (host,a,b);
 exit (0);
 }

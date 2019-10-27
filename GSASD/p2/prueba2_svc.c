@@ -3,7 +3,7 @@
  * It was generated using rpcgen.
  */
 
-#include "prueba.h"
+#include "prueba2.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <rpc/pmap_clnt.h>
@@ -21,9 +21,6 @@ calculadora_prog_1(struct svc_req *rqstp, register SVCXPRT *transp)
 {
 	union {
 		operandos suma_1_arg;
-		operandos multiplicacion_1_arg;
-		operandos division_1_arg;
-		operandos resta_1_arg;
 	} argument;
 	char *result;
 	xdrproc_t _xdr_argument, _xdr_result;
@@ -38,24 +35,6 @@ calculadora_prog_1(struct svc_req *rqstp, register SVCXPRT *transp)
 		_xdr_argument = (xdrproc_t) xdr_operandos;
 		_xdr_result = (xdrproc_t) xdr_int;
 		local = (char *(*)(char *, struct svc_req *)) suma_1_svc;
-		break;
-
-	case MULTIPLICACION:
-		_xdr_argument = (xdrproc_t) xdr_operandos;
-		_xdr_result = (xdrproc_t) xdr_int;
-		local = (char *(*)(char *, struct svc_req *)) multiplicacion_1_svc;
-		break;
-
-	case DIVISION:
-		_xdr_argument = (xdrproc_t) xdr_operandos;
-		_xdr_result = (xdrproc_t) xdr_double;
-		local = (char *(*)(char *, struct svc_req *)) division_1_svc;
-		break;
-
-	case RESTA:
-		_xdr_argument = (xdrproc_t) xdr_operandos;
-		_xdr_result = (xdrproc_t) xdr_int;
-		local = (char *(*)(char *, struct svc_req *)) resta_1_svc;
 		break;
 
 	default:
