@@ -8,7 +8,7 @@
 
 
 void
-calculadora_prog_1(char *host,int a, int b)
+calculadora_prog_1(char *host,int operacion,int a, int b)
 {
 	CLIENT *clnt;
 	int  *result_1;
@@ -23,6 +23,7 @@ calculadora_prog_1(char *host,int a, int b)
 	operandos  division_1_arg;
 	division_1_arg.a=a;
 	division_1_arg.b=b;
+	int division_cero=0;
 	int  *result_4;
 	operandos  resta_1_arg;
 	resta_1_arg.a=a;
@@ -36,45 +37,82 @@ calculadora_prog_1(char *host,int a, int b)
 	}
 #endif	/* DEBUG */
 
-	result_1 = suma_1(&suma_1_arg, clnt);
-	if (result_1 == (int *) NULL) {
-		clnt_perror (clnt, "call failed");
+	switch (operacion) {
+		case 1:
+		result_1 = suma_1(&suma_1_arg, clnt);
+		if (result_1 == (int *) NULL) {
+			clnt_perror (clnt, "call failed");
+		}
+		printf("El resultado de la suma es: %d\n",*result_1);
+		break;
+		case 2:
+		result_4 = resta_1(&resta_1_arg, clnt);
+		if (result_4 == (int *) NULL) {
+			clnt_perror (clnt, "call failed");
+		}
+		printf("El resultado de la resta es: %d\n",*result_4 );
+		break;
+		case 3:
+		result_2 = multiplicacion_1(&multiplicacion_1_arg, clnt);
+		if (result_2 == (int *) NULL) {
+			clnt_perror (clnt, "call failed");
+		}
+		printf("El resultado de la multiplicacion es: %d\n",*result_2 );
+		break;
+		case 4:
+		if(b==0){
+			printf("No se puede dividir entre cero\n" );
+		}
+		else{
+			result_3 = division_1(&division_1_arg, clnt);
+			if (result_3 == (double *) NULL) {
+				clnt_perror (clnt, "call failed");
+			}
+			printf("El resultado de la division es: %.2f\n",*result_3 );
+		}
+		break;
 	}
-	result_2 = multiplicacion_1(&multiplicacion_1_arg, clnt);
-	if (result_2 == (int *) NULL) {
-		clnt_perror (clnt, "call failed");
-	}
-	result_3 = division_1(&division_1_arg, clnt);
-	if (result_3 == (double *) NULL) {
-		clnt_perror (clnt, "call failed");
-	}
-	result_4 = resta_1(&resta_1_arg, clnt);
-	if (result_4 == (int *) NULL) {
-		clnt_perror (clnt, "call failed");
-	}
-	printf("El resultado de la suma es: %d\n",*result_1 );
-	printf("El resultado de la resta es: %d\n",*result_4 );
-	printf("El resultado de la multiplicacion es: %d\n",*result_2 );
-	printf("El resultado de la division es: %.2f\n",*result_3 );
+
 #ifndef	DEBUG
 	clnt_destroy (clnt);
 #endif	 /* DEBUG */
 }
 
+int menu_operacion(){
+	int opcion;
+	do {
+		printf("-------------------------------\n" );
+		printf("Selecciona la operacion:\n");
+		printf(" 1.- Suma\n" );
+		printf(" 2.- Resta\n" );
+		printf(" 3.- Multiplicacion\n" );
+		printf(" 4.- Division\n" );
+		printf(" Opcion: " );
+		scanf("%d",&opcion );
+		printf("-------------------------------\n" );
+		if(opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4){
+			printf(" Opcion no valida, introduzca otra opcion\n" );
+		}
+	} while(opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4);
+
+	return opcion;
+}
 
 int
 main (int argc, char *argv[])
 {
 	char *host;
+	int operacion;
 	int a,b;
 	if (argc < 2) {
 		printf ("usage: %s server_host\n", argv[0]);
 		exit (1);
 	}
 	host = argv[1];
+	operacion=menu_operacion();
 	printf("Introduzca dos valores: \n" );
 	scanf("%d",&a );
 	scanf("%d",&b );
-	calculadora_prog_1 (host,a,b);
+	calculadora_prog_1 (host,operacion,a,b);
 exit (0);
 }

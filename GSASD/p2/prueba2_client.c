@@ -40,8 +40,8 @@ int menu(){
 	int opcion;
 	printf("----------------------------------------\n" );
 	printf("  1.- Sumar local\n" );
-	printf("  2.- Sumar en la misma maquina\n" );
-	printf("  3.- Sumar en distinta maquina\n");
+	printf("  2.- Sumar en la misma maquina 100000 veces\n" );
+	printf("  3.- Sumar en distinta maquina 1000 veces\n");
 	printf("  0.- Salir\n" );
 	printf("----------------------------------------\n" );
 	printf("  Opcion: ");
@@ -102,7 +102,7 @@ main (int argc, char *argv[])
 			printf("  Segundo valor: " );
 			scanf("%d",&b );
 			gettimeofday(&t_ini,NULL);
-			for(int i=0;i<10000;i++){
+			for(int i=0;i<1000;i++){
 				host = argv[1];
 				calculadora_prog_1(host,a,b);
 			}
