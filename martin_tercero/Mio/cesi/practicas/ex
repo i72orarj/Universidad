@@ -1,0 +1,1304 @@
+
+Pregunta 1
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿En qué directorio se sitúan por defecto los ficheros de registro de actividad de Linux?
+Seleccione una:
+a. /proc/sys
+b. /var/log
+c. /etc/init.d
+d. /tmp/log
+Retroalimentación
+La respuesta correcta es: /var/log
+Pregunta 2
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+iostat es
+Seleccione una:
+a. Un programa que muestra estadísticas de la CPU y de entrada/salida de dispositivos, particiones y sistemas de ficheros en red
+b. Un programa incluido en el paquete sysstat
+c. Un programa que monitoriza el sistema observando el tiempo que los dispositivos se activan en relación a sus ratios de transferencias
+d. Todas las respuestas son correctas
+Retroalimentación
+La respuesta correcta es: Todas las respuestas son correctas
+Pregunta 3
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando emplearía en Linux para revisar los mensajes que ha generado el sistema operativo durante su arranque?
+Seleccione una:
+a. boot
+b. dmesg
+c. top
+d. htop
+Retroalimentación
+La respuesta correcta es: dmesg
+Pregunta 4
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Dónde está el archivo de configuración de SSH?
+Seleccione una:
+a. /var/ssh/sshd_config
+b. /etc/ssh/sshd_config
+c. /home/ssh/sshd_config
+d. /var/ssh/conf
+Retroalimentación
+La respuesta correcta es: /etc/ssh/sshd_config
+Pregunta 5
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué comando podemos ver los usuarios que hay conectados a un sistema Linux?
+Seleccione una:
+a. users
+b. whois
+c. system user
+d. who
+Retroalimentación
+La respuesta correcta es: who
+Pregunta 6
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para habilitar el registro de conexiones y transferencias FTP del servicio vsftpd en Centos descomentamos las siguientes opciones en el archivo ftpd.conf
+Seleccione una:
+a. No existe el archivo ftpd.conf
+b. dual_log_enable = YES
+c. dual_log_enable = YES y xferlog_enable = YES
+d. dual_log_enable = YES y xferlog_enable = NO
+Retroalimentación
+La respuesta correcta es: No existe el archivo ftpd.conf
+Pregunta 7
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+La utilidad ab (Apache Benchmark)
+Seleccione una:
+a. Se instala junto con el servidor web apache httpd
+b. Todas las afirmaciones son ciertas
+c. Su uso no está limitado al servidor web apache httpd
+d. Se emplea para generar test de carga http
+Retroalimentación
+La respuesta correcta es: Se emplea para generar test de carga http
+Pregunta 8
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para habilitar el registro de conexiones y transferencias FTP del servicio vsftpd en Centos descomentamos las siguientes opciones en el archivo ftpd.conf
+Seleccione una:
+a. dual_log_enable = YES y xferlog_enable = NO
+b. dual_log_enable = YES
+c. dual_log_enable = YES y xferlog_enable = YES
+d. No existe el archivo ftpd.conf
+Retroalimentación
+La respuesta correcta es: No existe el archivo ftpd.conf
+Pregunta 9
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+El puerto por defecto asignado al servicio SMTP es
+Seleccione una:
+a. 21
+b. 25
+c. 22
+d. 24
+Retroalimentación
+La respuesta correcta es: 25
+Pregunta 10
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo sabemos que un procesador es válido para una determinada placa?
+Seleccione una:
+a. Comprobando que la placa base y el procesador sean de la misma marca
+b. Comprobando que el procesador sea de los mismos bits que la placa. 32 o 64 bits
+c. Comprobando que el socket de la placa y el procesador sean compatibles
+d. Ninguna de las respuestas anteriores es correcta
+Retroalimentación
+La respuesta correcta es: Comprobando que el socket de la placa y el procesador sean compatibles
+Pregunta 11
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué beneficios puede tener usar LVM?
+Seleccione una:
+a. Permite instalar un gestor de arranque
+b. Modificación dinámica de particiones
+c. Ninguna de las respuestas es correcta
+d. Aumenta las prestaciones del sistema de archivos
+Retroalimentación
+La respuesta correcta es: Modificación dinámica de particiones
+Pregunta 12
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué comando linux puedo obtener información de la CPU y de la memoria de un Sistema Informático?
+Seleccione una:
+a. Ninguna de las respuestas es cierta
+b. "cpu -i" y "mem -i" respectivamente
+c. "cat /proc/cpuinfo" y "cat /proc/meminfo" respectivamente
+d. "infocpu" y "meminfo" respectivamente
+Retroalimentación
+La respuesta correcta es: "cat /proc/cpuinfo" y "cat /proc/meminfo" respectivamente
+Pregunta 13
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué opción de phoronix puedes comprobar el tamaño de un benchmark antes de descargarlo?
+Seleccione una:
+a. phoronix-test-suit check
+b. phoronix-test-suit benchmark
+c. phoronix-test-suit install info
+d. phoronix-test-suit info
+Retroalimentación
+La respuesta correcta es: phoronix-test-suit info
+Pregunta 14
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué opción de sar podemos ver información sobre la actividad del sistema de entrada/salida?
+Seleccione una:
+a. No es posible obtener esa información con sar
+b. Opción -b
+c. Opción -s
+d. Opción -io
+Retroalimentación
+La respuesta correcta es: Opción -b
+Pregunta 15
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo podemos buscar texto en el editor pico?
+Seleccione una:
+a. Control+W
+b. Control+F
+c. Control+R
+d. Control+B
+Retroalimentación
+La respuesta correcta es: Control+W
+Pregunta 16
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+LVM es el acrónimo de
+Seleccione una:
+a. Logical Volume Manager
+b. Logical Virtual Machine
+c. Low-cost Virtualization Mechanism
+d. Local Volume Management
+Retroalimentación
+La respuesta correcta es: Logical Volume Manager
+Pregunta 17
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Dónde obtiene sus beneficios la empresa Canonical que está detrás de Ubuntu?
+Seleccione una:
+a. De las empresas que pagan por usarlo
+b. De donaciones
+c. De Microsoft
+d. De su mantenimiento
+Retroalimentación
+La respuesta correcta es: De su mantenimiento
+Pregunta 18
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿En qué path del sistema de fichero linux tenemos acceso a modificar los parámetros del kernel?
+Seleccione una:
+a. /boot/kernel
+b. /proc/kernel
+c. /var/sys
+d. /proc/sys
+Retroalimentación
+La respuesta correcta es: /proc/sys
+Pregunta 19
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para configurar vsftpd para permitir autenticar usuarios del sistema y permitirles subir archivos al sistema mediante FTP, en el archivo de configuración vsftpd.conf añadimos:
+Seleccione una:
+a. local_enable = YES
+b. local_enable = YES y write_enable = YES
+c. local_users_enable = YES y write_users_enable = YES
+d. write_enable = YES
+Retroalimentación
+La respuesta correcta es: local_enable = YES y write_enable = YES
+Pregunta 20
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Proporciona el software "System Spec" información correcta de los componentes hardware del equipo donde éste se ejecuta?
+Seleccione una:
+a. Si, puesto que "System Spec" es un software que muestra información de los componentes de un sistema
+b. No, puesto que "System Spec" muestra la información que le proporciona el Sistema Operativo y no la del equipo en sí
+c. No, puesto que "System Spec" es un software de gestión de sistemas
+d. No, puesto que "System Spec" es un software de benchmarking y solo genera carga al sistema
+Retroalimentación
+La respuesta correcta es: No, puesto que "System Spec" muestra la información que le proporciona el Sistema Operativo y no la del equipo en sí
+Pregunta 21
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Las siglas "LAMP" hacen referencia a:
+Seleccione una:
+a. Linux+Apache+Mystic+Perl
+b. Ninguna de las respuestas es correcta
+c. Linux+Apache+MySQL+PHP
+d. Linux+Apache+MySQL+Python
+Retroalimentación
+La respuesta correcta es: Linux+Apache+MySQL+PHP
+Pregunta 22
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Una máquina virtual configurada en modo "NAT"
+Seleccione una:
+a. Todas las respuestas son correctas
+b. Cuando intenta comunicarse con la red o Internet, lo hace a través de un Firewall propio dentro de la aplicación de virtualización
+c. Comparte la dirección IP del anfitrión
+d. Se esconde detrás de la IP de la máquina real
+Retroalimentación
+La respuesta correcta es: Todas las respuestas son correctas
+Pregunta 23
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando Windows muestra una lista de las aplicaciones en ejecución y el uso de memoria?
+Seleccione una:
+a. Winmemory
+b. Memlist
+c. Memorylist
+d. Tasklist
+Retroalimentación
+La respuesta correcta es: Tasklist
+Pregunta 24
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué empresa es responsable de VirtualBox?
+Seleccione una:
+a. Apache
+b. Oracle
+c. PostgreSQL
+d. MySQL
+Retroalimentación
+La respuesta correcta es: Oracle
+Pregunta 25
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Como puedo obtener de manera gráfica los datos obtenidos del comando ab?
+Seleccione una:
+a. Mediante la opción -fx y el paquete gnuplot
+b. Mediante la opción -d
+c. Mediante la opción -p
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: Ninguna de las respuestas es correcta
+Pregunta 26
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Un “jumper” es un dispositivo utilizado para configurar interfaces PATA o SATA, su función es cerrar un circuito electrónico para establecer un funcionamiento determinado. Sabiendo esto, ¿los dispositivos SATA usan “jumpers”?
+Seleccione una:
+a. No, los "jumpers" solo existen en dispositivos PATA
+b. Sí, sirven también para elegir maestro, esclavo o cable select
+c. No, SATA no usa “jumpers” ni tiene pines destinados a ello
+d. Sí, se pueden usar para limitar la tasa de transferencia de datos
+Retroalimentación
+La respuesta correcta es: Sí, se pueden usar para limitar la tasa de transferencia de datos
+Pregunta 27
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Dónde obtiene sus beneficios la empresa Debian SL que está detrás de Ubuntu?
+Seleccione una:
+a. Debian SL no está detrás de Ubuntu
+b. Todas las respuestas son correctas
+c. De donaciones mensuales
+d. De empresas que pagan cuota al mes por usar Ubuntu
+Retroalimentación
+La respuesta correcta es: Todas las respuestas son correctas
+Pregunta 28
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Ocasiona algún riesgo el abrir puertos no asignados a programas?
+Seleccione una:
+a. Ninguno, puesto que si no lo usa ningún programa no ocurre nada
+b. Ninguna de las respuestas es correcta
+c. El puerto sigue abierto hasta que se cierre y puede tener problemas de seguridad
+d. No se pueden abrir puertos si no se asignan a ningún programa
+Retroalimentación
+La respuesta correcta es: El puerto sigue abierto hasta que se cierre y puede tener problemas de seguridad
+Pregunta 29
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué comando podemos mostrar los procesos de un determinado usuario en un sistema Linux?
+Seleccione una:
+a. proc -aux|grep
+b. ps -aux|grep
+c. ps -aux
+d. ps -proc|grep
+Retroalimentación
+La respuesta correcta es: ps -aux|grep
+Pregunta 30
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Respecto a la caché L1, L2 y L3 en un procesador
+Seleccione una:
+a. La caché L2 es la más rápida puesto que es la intermedia entre la L1 y la L3
+b. La caché L1 es la más rápida
+c. La caché L2 es más rápida que la caché L1
+d. La caché L3 es la más rápida
+Retroalimentación
+La respuesta correcta es: La caché L1 es la más rápida
+Pregunta 31
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué archivo hay que consultar para ver quién se ha autorizado como su en Debian/Ubuntu?
+Seleccione una:
+a. /var/log/login.log
+b. /etc/authentication.log
+c. /var/log/auth.log
+d. /var/user/login.log
+Retroalimentación
+La respuesta correcta es: /var/log/auth.log
+Pregunta 32
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo asignamos direcciones IP automáticamente a la interfaz eth0?
+Seleccione una:
+a. ifconfig auto eth0
+b. En el archivo network: iface eth0 inet dhcp
+c. No se pueden añadir automáticamente direcciones IP
+d. En el archivo interfaces: iface eth0 inet dhcp
+Retroalimentación
+La respuesta correcta es: En el archivo interfaces: iface eth0 inet dhcp
+Pregunta 33
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Existen puertos superiores a 65535?
+Seleccione una:
+a. No porque no existen routers que puedan direccionar más de ese número de puertos
+b. Si, hay infinitos puertos
+c. No porque los puertos se almacenan en cadenas de 16 bits
+d. No porque con 65535 es más que suficiente
+Retroalimentación
+La respuesta correcta es: No porque los puertos se almacenan en cadenas de 16 bits
+Pregunta 34
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Podrían funcionar correctamente dos servicios iguales en una misma máquina?, p. ej. IIS y Apache.
+Seleccione una:
+a. No puesto que ambos son servidores web
+b. Si, sin problema alguno
+c. Si, siempre y cuando el servicio lo proporcionen por puertos distintos
+d. No puesto que uno es de plataformas Windows y otro de plataformas Linux
+Retroalimentación
+La respuesta correcta es: Si, siempre y cuando el servicio lo proporcionen por puertos distintos
+Pregunta 35
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Netsh
+Seleccione una:
+a. Es un comando que permite cambiar la configuración de la red en windows
+b. Es un comando que permite visualizar la configuración de la red
+c. Ninguna de las respuestas es cierta
+d. Es un script para hacer benchmarking sobre la red
+Retroalimentación
+La respuesta correcta es: Es un comando que permite cambiar la configuración de la red en windows
+Pregunta 36
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál es la diferencia entre ServerRoot y DocumentRoot en un servidor Apache?
+Seleccione una:
+a. ServerRoot es la ruta de acceso a los archivos ejecutables del servidor web y DocumentRoot es la ruta de los archivos que se envían por el servidor
+b. ServerRoot es la ruta donde se encuentran los archivos de configuración del servidor y DocumentRoot es la ruta donde están los archivos que el servidor web envía a los clientes
+c. ServerRoot es la ruta de los archivos del servidor web y DocumentRoot es la ruta donde se guarda la documentación del servidor
+d. ServerRoot y DocumentRoot es lo mismo
+Retroalimentación
+La respuesta correcta es: ServerRoot es la ruta de acceso a los archivos ejecutables del servidor web y DocumentRoot es la ruta de los archivos que se envían por el servidor
+Pregunta 37
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comandos muestran información de los procesos existentes en un sistema Linux y qué opción muestra los procesos que se están ejecutando en ese momento?
+Seleccione una:
+a. El comando proc y la opción -r
+b. El comando proc y la opción -e
+c. El comando ps y la opción -r
+d. El comando ps y la opción -e
+Retroalimentación
+La respuesta correcta es: El comando ps y la opción -r
+Pregunta 38
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En general, ¿qué latencia sería mejor para una memoria RAM?
+Seleccione una:
+a. Una con CL9 es mejor que una con CL7
+b. CL es Circuit Logic, no tiene nada que ver con la latencia en un RAM
+c. Ninguna de las respuestas es correcta
+d. Una con CL7 es mejor que una con CL9
+Retroalimentación
+La respuesta correcta es: Una con CL7 es mejor que una con CL9
+Pregunta 39
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando emplearía para establecer una conexión cifrada con un equipo remoto?
+Seleccione una:
+a. sshd
+b. telnet
+c. ssh
+d. rcp
+Retroalimentación
+La respuesta correcta es: ssh
+Pregunta 40
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Una máquina virtual configurada en modo "Host-Only"
+Seleccione una:
+a. Puede acceder al equipo anfitrión y a otras máquinas virutales de la misma red
+b. Puede acceder al equipo anfitrión pero no a otras máquinas virtuales de la misma red
+c. Ninguna de las respuestas es cierta
+d. No puede acceder a otras máquinas virtuales de la misma red
+Retroalimentación
+La respuesta correcta es: Puede acceder al equipo anfitrión y a otras máquinas virutales de la misma red
+Pregunta 41
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué archivo es el que contiene la configuración de ssh?
+Seleccione una:
+a. /etc/ssh/sshd_config
+b. /etc/ssh/ssh_config
+c. /var/config/ssh
+d. /etc/config/ssh
+Retroalimentación
+La respuesta correcta es: /etc/ssh/sshd_config
+Pregunta 42
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Munin es un monitor que...
+Seleccione una:
+a. muestra la información a través de una GUI remota
+b. muestra la información a través de un navegador web
+c. muestra la información a través de una interfaz local
+d. muestra la información a través de la consola
+Retroalimentación
+La respuesta correcta es: muestra la información a través de un navegador web
+Pregunta 43
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cual de los siguientes comandos de linux te permite averiguar la IP del equipo?
+Seleccione una:
+a. ifconfig
+b. lynx
+c. ipconfig
+d. ifup
+Retroalimentación
+La respuesta correcta es: ifconfig
+Pregunta 44
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué distribución es derivada de Red Hat?
+Seleccione una:
+a. Fedora
+b. OpenSuse
+c. Ubuntu
+d. Linux Mint
+Retroalimentación
+La respuesta correcta es: Fedora
+Pregunta 45
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para crear una clave pública y privada rsa con ssh usamos el comando:
+Seleccione una:
+a. ssh-keygen -t rsa
+b. ssh_genkey -t rsa
+c. genkey_ssh -t rsa
+d. keygen_ssh -t rsa
+Retroalimentación
+La respuesta correcta es: ssh-keygen -t rsa
+Pregunta 46
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En el editor Pico,¿qué letras hay que pulsar para escribir mensajes, listarlos y guardarlos?
+Seleccione una:
+a. Las letras E, L y G respectivamente
+b. Las letras C, I y S respectivamente
+c. Las letras W, L y S respectivamente
+d. Las letras M, L y G respectivamente
+Retroalimentación
+La respuesta correcta es: Las letras C, I y S respectivamente
+Pregunta 47
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué opción de sar podemos ver información sobre transferencias para cada disco?
+Seleccione una:
+a. Opción -t
+b. No se puede obtener esa información
+c. Opción -d
+d. Opción -b
+Retroalimentación
+La respuesta correcta es: Opción -d
+Pregunta 48
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Una máquina virtual configurada en modo "Bridge"
+Seleccione una:
+a. Es completamente independiente de la red. El adaptador de red hace de puente
+b. Es completamente independiente de la red. Es un equipo más
+c. Es dependiente de la red, depende del hipervisor y del anfitrión
+d. Es independiente de la red en cierto modo, depende de la configuración puente
+Retroalimentación
+La respuesta correcta es: Es completamente independiente de la red. Es un equipo más
+Pregunta 49
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de los siguientes programas es un editor de textos?
+Seleccione una:
+a. vim
+b. telnet
+c. noteplus
+d. dmesg
+Retroalimentación
+La respuesta correcta es: vim
+Pregunta 50
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En Munin, ¿es posible mostrar gráficas en función del tiempo?
+Seleccione una:
+a. Sí, pero hay que activar la opción en el menú Graphics-> Main Handlers -> Display Options
+b. Sí, se pueden mostrar en función de días, semanas, meses y años
+c. Sí, se pueden mostrar en función de horas, minutos y segundos
+d. Sí, pero solo en tiempo real
+Retroalimentación
+La respuesta correcta es: Sí, se pueden mostrar en función de días, semanas, meses y años
+Pregunta 51
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿En qué consiste la tecnología IntelliPower aplicada a un Disco Duro?
+Seleccione una:
+a. En un ahorro energético del consumo de los discos duros
+b. Ninguna de las respuestas es cierta
+c. En un equilibrio entre velocidad de rotación, tasa de transferencia y algoritmos de cache para proporcionar ahorro energético y rendimiento.
+d. En una gestión inteligente de la energía de un disco duro
+Retroalimentación
+La respuesta correcta es: En un equilibrio entre velocidad de rotación, tasa de transferencia y algoritmos de cache para proporcionar ahorro energético y rendimiento.
+Pregunta 52
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para instalar el servicio vsftpd en CentOS usamos:
+Seleccione una:
+a. sudo apt-get install vsftpd
+b. sudo yum install vsftpd
+c. sudo yum install ftp
+d. sudo apt-get install ftp
+Retroalimentación
+La respuesta correcta es: sudo yum install vsftpd
+Pregunta 53
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué aporta ssh respecto a Telnet?
+Seleccione una:
+a. Telnet sólo se ejecuta en Windows
+b. ssh va encriptado
+c. ssh permite manejar un ordenador de forma remota
+d. Telnet es de pago
+Retroalimentación
+La respuesta correcta es: ssh va encriptado
+Pregunta 54
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de los siguientes es un conector de alimentación?
+Seleccione una:
+a. IDE
+b. DVI
+c. Molet
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: Ninguna de las respuestas es correcta
+Pregunta 55
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+MaxClients es un
+Seleccione una:
+a. Parámetro para optimizar ssh
+b. Parámetro que muestra la carga de clientes
+c. Parámetro para optimizar en Apache
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: Parámetro para optimizar en Apache
+Pregunta 56
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál es el tamaño por defecto a partir del cual comprimir las páginas en el IIS?
+Seleccione una:
+a. 0 bytes
+b. 1000 Bytes
+c. 1 MByte
+d. 256 bytes
+Retroalimentación
+La respuesta correcta es: 256 bytes
+Pregunta 57
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo se busca un paquete en apt?
+Seleccione una:
+a. apt-search nombre_del_paquete
+b. apt-cache search nombre_del_paquete
+c. apt-find nombre_del_paquete
+d. apt-get search nombre_del_paquete
+Retroalimentación
+Las respuestas correctas son: apt-cache search nombre_del_paquete, apt-search nombre_del_paquete
+Pregunta 58
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué cabecera del protocolo http devuelve el servidor web para informar de que el contenido está comprimido?
+Seleccione una:
+a. Content-Length: zipped
+b. Content-Encoding: gzip
+c. Content-Type: text/html-zip
+d. Content-Type: bin/zip
+Retroalimentación
+La respuesta correcta es: Content-Encoding: gzip
+Pregunta 59
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando usarías en un sistema Linux para obtener informes estadísticos relacionados con CPU?
+Seleccione una:
+a. cpuconfig
+b. mpstat
+c. vmstat
+d. cpuproc
+Retroalimentación
+La respuesta correcta es: mpstat
+Pregunta 60
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para reemplazar las ocurrencias de "A" en un texto por "B", en vi se usa el comando:
+Seleccione una:
+a. :g/A/s//B/g
+b. :g/A/B
+c. No se puede reemplazar caracteres con vi
+d. :r/A/B
+Retroalimentación
+La respuesta correcta es: :g/A/s//B/g
+Pregunta 61
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Tras la modificación de un parámetro en el servicio sshd, el cambio es inmediato
+Seleccione una:
+a. No, hay que reiniciar el servicio
+b. Sí
+c. No, hay que reiniciar la máquina
+d. Sí, si la modificación fue hecha por root
+Retroalimentación
+La respuesta correcta es: No, hay que reiniciar el servicio
+Pregunta 62
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué compañía es la actual propietaria del Sistema Operativo Solaris?
+Seleccione una:
+a. Microsoft
+b. HP
+c. Oracle
+d. IBM
+Retroalimentación
+La respuesta correcta es: Oracle
+Pregunta 63
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando usarías para guardar los cambios realizados en el editor Pico?
+Seleccione una:
+a. Control + S
+b. Control + W
+c. Control + O
+d. Control + G
+Retroalimentación
+La respuesta correcta es: Control + O
+Pregunta 64
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo calcula la velocidad de transferencia Apache Benchmark?
+Seleccione una:
+a. Mediante la fórmula "totalread/1024/time"
+b. Mediante la fórmula "totalread/time"
+c. Mediante la fórmula "bytes/1024/time"
+d. Apache Benchamark no tiene opción de calcular la velocidad de transferencia
+Retroalimentación
+La respuesta correcta es: Mediante la fórmula "totalread/1024/time"
+Pregunta 65
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de las siguientes afirmaciones es cierta?
+Seleccione una:
+a. Los cambios realizados en /proc/sys se conservan tras reiniciar el sistema
+b. Los cambios realizados con sysctl son permanentes aún tras reiniciar el sistema
+c. Para hacer permanentes los cambios en el sistema debo fijarlos en el archivo /etc/sysctl.conf
+d. Para hacer permanentes los cambios en los parámetros del sistema debo recompilar el kernel o los módulos modificados
+Retroalimentación
+La respuesta correcta es: Para hacer permanentes los cambios en el sistema debo fijarlos en el archivo /etc/sysctl.conf
+Pregunta 66
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+La compresión del contenido Http
+Seleccione una:
+a. Es admitida por todos los servidores y clientes web actuales
+b. Reduce el uso de CPU en el cliente web ya que tiene que procesar menos información
+c. Siempre es conveniente y debe ser activada para todos los tipos de contenidos y tamaños de archivos
+d. Aumenta el uso de CPU en el servidor web al tener que comprimir los contenidos
+Retroalimentación
+La respuesta correcta es: Aumenta el uso de CPU en el servidor web al tener que comprimir los contenidos
+Pregunta 67
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En CentOS,¿ en qué ruta se encuentran los archivos históricos de sar?
+Seleccione una:
+a. En /var/log/sa
+b. En /tmp/log/sa
+c. En /sar/log/sa
+d. En /tmp/sar
+Retroalimentación
+La respuesta correcta es: En /var/log/sa
+Pregunta 68
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Las siglas HTTP son
+Seleccione una:
+a. High Text Transfer Protocol
+b. Hyper Text Transfer Port
+c. Ninguna de las respuestas es correcta
+d. Hyper Text Transfer Protocol
+Retroalimentación
+La respuesta correcta es: Hyper Text Transfer Protocol
+Pregunta 69
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para borrar una línea entera con vi usamos el comando:
+Seleccione una:
+a. delete line
+b. d%
+c. dd
+d. x
+Retroalimentación
+La respuesta correcta es: dd
+Pregunta 70
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Tras la modificación de un parámetro en el servicio vssh, el cambio es inmediato
+Seleccione una:
+a. El servicio vssh no existe
+b. No, hay que reiniciar el servicio vssh
+c. Sí
+d. No, hay que reiniciar la máquina virtual
+Retroalimentación
+La respuesta correcta es: El servicio vssh no existe
+Pregunta 71
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cual de las siguientes afirmaciones es cierta sobre la Fundación Apache?
+Seleccione una:
+a. Es una fundación para promover el desarrollo en comunidad de software abierto
+b. Todas las respuestas son ciertas
+c. Es responsable del desarrollo del servidor web Apache Httpd
+d. Es la responsable del desarrollo del contenedor de Servlets Tomcat
+Retroalimentación
+La respuesta correcta es: Todas las respuestas son ciertas
+Pregunta 72
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cómo establecer la configuración de red bajo Linux?
+Seleccione una:
+a. ipconfig
+b. ipdown
+c. ifconfig
+d. ping
+Retroalimentación
+La respuesta correcta es: ifconfig
+Pregunta 73
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué archivo hay que modificar para cambiar la configuración de php?
+Seleccione una:
+a. Ninguna de las respuestas es correcta
+b. php.ini
+c. php_config
+d. php_conf.ini
+Retroalimentación
+La respuesta correcta es: php.ini
+Pregunta 74
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para activar o desactivar la protección de SELinux en demonios específicos del sistema usamos los comandos getsebool y setsebool, ¿Qué comando nos ayuda a establecer nuevas políticas de seguridad en un nuevo demonio que hemos tenido que programar como administrador para ofrecer un nuevo servicio a los clientes?
+Seleccione una:
+a. setnewdaemon
+b. setnewd
+c. sepolgen
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: sepolgen
+Pregunta 75
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En general, en el arranque de un sistema, ¿de donde obtiene la BIOS la información para chequear el hardware?
+Seleccione una:
+a. De la memoria BIOSRAM
+b. De la memoria DRAM
+c. De la memoria STARTRAM
+d. De la memoria CMOS
+Retroalimentación
+La respuesta correcta es: De la memoria CMOS
+Pregunta 76
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de los siguientes programas no es un bechmark de sistema?
+Seleccione una:
+a. sysctl
+b. aida64
+c. ab
+d. phoronix
+Retroalimentación
+La respuesta correcta es: sysctl
+Pregunta 77
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué comando vemos el valor de las variables SELinux asociadas al servicio FTP?
+Seleccione una:
+a. getsebool -a | grep "ftp"
+b. getsebool -f | grep ftp
+c. getsebool -v | grep vsftpd
+d. getsebool ftp
+Retroalimentación
+La respuesta correcta es: getsebool -a | grep "ftp"
+Pregunta 78
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+La información RSS aportada por el comando PS muestra
+Seleccione una:
+a. la entrada/salida del proceso
+b. la memoria (KiB) física ocupada por el proceso
+c. ninguna de las respuestas es correcta
+d. el uso de CPU del proceso
+Retroalimentación
+La respuesta correcta es: la memoria (KiB) física ocupada por el proceso
+Pregunta 79
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+lynx es
+Seleccione una:
+a. Lanza la interfaz gráfica (XWindow) de linux
+b. El gestor de paquetes por defecto de linux
+c. Un cliente web por línea de comandos
+d. Un editor de textos similar a vi pero más fácil de utilizar
+Retroalimentación
+La respuesta correcta es: Un cliente web por línea de comandos
+Pregunta 80
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿A qué nos referimos cuando hablamos de un SSD?
+Seleccione una:
+a. A un disco duro flash
+b. A un disco duro sólido
+c. A un dispositivo en estado sólido
+d. A un dispositivo duro
+Retroalimentación
+La respuesta correcta es: A un dispositivo en estado sólido
+Pregunta 81
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué opción de sar podemos ver información sobre la utilización del procesador?
+Seleccione una:
+a. Opción -u
+b. Opción -cpu
+c. Opción -p
+d. Opción -i
+Retroalimentación
+La respuesta correcta es: Opción -u
+Pregunta 82
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+La salida de los mensajes emitidos por el kernel se encuentra en
+Seleccione una:
+a. /proc/kmsg
+b. /sys/kernelmessage
+c. /proc/kernel
+d. /sys/kernel
+Retroalimentación
+La respuesta correcta es: /proc/kmsg
+Pregunta 83
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+La opción -X de ssh sirve para:
+Seleccione una:
+a. Mostrar la interfaz de programas de la máquina remota
+b. Establecer una conexión cruzada
+c. Para cerrar la conexión remota
+d. Para conectarse anónimamente a un servidor remoto
+Retroalimentación
+La respuesta correcta es: Mostrar la interfaz de programas de la máquina remota
+Pregunta 84
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuáles son soluciones de virtualización?
+Seleccione una:
+a. VMWare e Hipervisor
+b. Xen y VirtuaPC
+c. VirtualBox y VMWare
+d. VirtualBox e Hipervisor
+Retroalimentación
+La respuesta correcta es: VirtualBox y VMWare
+Pregunta 85
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de los siguientes no es un monitor?
+Seleccione una:
+a. Monperf
+b. Munin
+c. Nagios
+d. Ganglia
+Retroalimentación
+La respuesta correcta es: Monperf
+Pregunta 86
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+El puerto por defecto asociado al servicio DNS es
+Seleccione una:
+a. 53
+b. 23
+c. 22
+d. 56
+Retroalimentación
+La respuesta correcta es: 53
+Pregunta 87
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando emplearía en CentOS para comprobar si hay procesos del servidor web ejecutándose?
+Seleccione una:
+a. ps -ax | grep httpd
+b. start apache
+c. ps -ax | less apache
+d. top apache
+Retroalimentación
+La respuesta correcta es: ps -ax | grep httpd
+Pregunta 88
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+
+Si ejecutamos el comando "ssh-keygen -t rsa"
+Seleccione una:
+a. Se genera una clave temporal con encriptación rsa
+b. Se genera una clave y se almacena en /.shh/keys
+c. Se genera una clave y se almacena en /.ssh/id_rsa
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: Se genera una clave y se almacena en /.ssh/id_rsa
+Pregunta 89
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué archivo de auth.log contiene entradas más antiguas?
+Seleccione una:
+a. Ninguno, no hay archivos de logs que acaben en .gz
+b. auth.log.3.gz
+c. auth.log.2.gz
+d. auth.log.1.gz
+Retroalimentación
+La respuesta correcta es: auth.log.3.gz
+Pregunta 90
+Sin contestar
+Puntúa como 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En una conexión FTP en modo pasivo
+Seleccione una:
+a. Las conexiones se negocian entre el host cliente y el servidor
+b. Las conexiones son siempre abiertas por el host cliente
+c. Ninguna respuesta es correcta
+d. Las conexiones son siempre abiertas por el servidor
+Retroalimentación
+La respuesta correcta es: Las conexiones son siempre abiertas por el host cliente
+Pregunta 91
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Puedo transferir un fichero vía ssh? En caso afirmativo, ¿Cómo?
+Seleccione una:
+a. Si, mediante el comando scp
+b. No se puede transferir ficheros por ssh. SSH es un protocolo de acceso remoto no de transferencia de ficheros
+c. Si, mediante el comando ssh-file
+d. No, para transferir ficheros necesito FTP
+Retroalimentación
+La respuesta correcta es: Si, mediante el comando scp
+Pregunta 92
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál es la diferencia entre top y htop?
+Seleccione una:
+a. No hay diferencias, ya que la "h" es muda
+b. top está arriba
+c. htop no es un comando válido
+d. Ninguna de las respuestas es correcta
+Retroalimentación
+La respuesta correcta es: Ninguna de las respuestas es correcta
+Pregunta 93
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué editor de textos tiene modo edición y modo comandos?
+Seleccione una:
+a. pico
+b. vi
+c. emacs
+d. nano
+Retroalimentación
+La respuesta correcta es: vi
+Pregunta 94
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Cuál de los siguientes es un servidor web?
+Seleccione una:
+a. Mapache
+b. midnight-commander
+c. Lighttpd
+d. Skynet
+Retroalimentación
+La respuesta correcta es: Lighttpd
+Pregunta 95
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Con qué programa accedemos a la información de los monitores HW en Linux?
+Seleccione una:
+a. con munin
+b. con perfmon
+c. con top
+d. con lmsensors
+Retroalimentación
+La respuesta correcta es: con lmsensors
+Pregunta 96
+Incorrecta
+Puntúa -1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Dónde está alojado el archivo de configuración del servicio web Apache en CentOS?
+Seleccione una:
+a. /etc/apache2/conf/
+b. /etc/httpd/conf/
+c. /etc/apache/
+d. /etc/httpd/conf.d/
+Retroalimentación
+La respuesta correcta es: /etc/httpd/conf/
+Pregunta 97
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+Para habilitar acceso ftp a directorios de usuario en el servicio vsftpd en CentOS usamos el comando:
+Seleccione una:
+a. setsebool -F ftp_home_dir 1
+b. setsebool -U ftp_home_dir 1
+c. setsebool -P ftp_home_dir 1
+d. No se puede habilitar acceso ftp a directorios de usuarios
+Retroalimentación
+La respuesta correcta es: setsebool -P ftp_home_dir 1
+Pregunta 98
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+¿Qué comando instala el programa midgnight-commander? (suponga que es superusuario)
+Seleccione una:
+a. apt-get install midnight-commander
+b. apt-get installation mc
+c. Ninguna de las respuestas es correcta
+d. yum install mc
+Retroalimentación
+La respuesta correcta es: yum install mc
+Pregunta 99
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+sar -q -f /var/log/sa/sa23 -s 10:00:01
+Seleccione una:
+a. Muestra los trabajos activos el día 23 durante 10 horas
+b. Muestra estadísticas del promedio de carga del día 23, a partir de las 10.00
+c. Muestra estadísticas de los trabajos activos del día 23, a partir de las 10.00
+d. Muestra los trabajos activos el día 23 durante 10 minutos
+Retroalimentación
+La respuesta correcta es: Muestra estadísticas del promedio de carga del día 23, a partir de las 10.00
+Pregunta 100
+Correcta
+Puntúa 1,00 sobre 1,00
+Marcar pregunta
+Enunciado de la pregunta
+En una transferencia FTP en modo Activo
+Seleccione una:
+a. El cliente envía comando de control PASV
+b. El cliente envía comando de control PORT
+c. El cliente envía comando de control ACTIVE
+d. El cliente envía comando de control PORT ACTIVE
+Retroalimentación
+La respuesta correcta es: El cliente envía comando de control PORT
+
+

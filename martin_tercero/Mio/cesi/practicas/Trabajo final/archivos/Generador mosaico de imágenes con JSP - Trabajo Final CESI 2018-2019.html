@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0090)https://moodle.uco.es/m1819/pluginfile.php/198167/mod_resource/content/1/benchmarkCESI.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>&lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="java.io.File"%&gt;
+    
+    
+
+    
+        
+        <title>Generador mosaico de imágenes con JSP - Trabajo Final CESI 2018-2019</title>
+    
+
+    
+
+        &lt;%
+String iteraciones = request.getParameter("iteraciones");  //PODEMOS PASAR POR PARAMETRO (GET) EL NUMERO DE ITERACIONES
+
+String path = "D:/imagenesMedianas";  //ES NECESARIA LA RUTA ABSOLUTA DEL DIRECTORIO DEL SERVIDOR DONDE ESTAN ALOJADAS LAS IMAGENES
+File f = new File(path);
+File[] files = f.listFiles();
+
+int numIteraciones=100;
+int numImagenes = 0;
+
+if(iteraciones!=null)
+	numIteraciones = Integer.parseInt(iteraciones);
+if(files != null)
+	numImagenes = files.length;
+
+String htmlImagenes = "";
+long inicio = System.currentTimeMillis();
+for(int k=1;k<numiteraciones;k++){ for(int="" i="0;i&lt;files.length;i++){" if(!files[i].isdirectory()="" &&="" (files[i].getname().endswith(".jpg")="" ||="" files[i].getname().endswith(".jpg"))){="" htmlimagenes="" +="&lt;img src=\" download.jsp?filename="+files[i].getAbsolutePath()+" \"="">";
+			numImagenes++;
+		}
+	}
+}
+
+long fin = System.currentTimeMillis();
+%&gt;
+            <h1>Mosaico de
+                &lt;%=numImagenes%&gt; imágenes generado en
+                    &lt;%=(float)(fin-inicio)/1000f%&gt; segundos</h1>
+            <br>
+            &lt;%=htmlImagenes%&gt;
+
+    
+
+    </numiteraciones;k++){></body></html>

@@ -1,0 +1,13 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+\begin{document}
+
+\begin{frame}
+    \frametitle{Marsupiales}
+    Canguro, Koala, Wombat...
+\end{frame}
+
+\end{document}
+

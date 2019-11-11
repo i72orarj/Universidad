@@ -1,0 +1,42 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+\usetheme{Warsaw}
+\usecolortheme{default}
+\useoutertheme{shadow}
+\useinnertheme{circles}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Marsupiales}
+    Canguro, Koala, Wombat...
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Source code}
+
+\begin{lstlisting}[caption=First C example]
+int main()
+{
+    printf("Hello World!");
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+\frametitle{Some background}
+We start our discussion with some concepts.
+\pause
+The first concept we introduce originates with Erd\H os.
+\end{frame}
+
+\end{document}
+

@@ -1,0 +1,7 @@
+Martin Paez Anguita
+
+clase cliente: me da error al compilar y no se que tipo de error es, pero deberia de conectar con el servidor la estructura es parecida al cliente de los ficheros de ejemplo,
+deberia de conectar con el servidor si la ip y el puerto estan bien, y saltar 2 tipos de errores, si el servidor ha superado el maximo de clientes y si no consigue conectar con el.
+
+clase servidor: no la tengo completada pero estoy trabajando con la conexion con el cliente para que puedan acceder los dos usuarios e crear o ingresar un nuevo usuario(que me
+falta por hacer).

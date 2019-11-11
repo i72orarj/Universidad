@@ -1,0 +1,15 @@
+7.  -> 
+
+Aparece una aclaración en la que se indica que antes de cada cláusula y subcláusula aparecerán algunas definiciones. Esto podrá ayudarnos a entender el documento si no conocemos alguno de estos términos.
+
+10. La cláusula 5 describe la arquitectura de capas. ¿Cuáles son los principios fundamentales con
+los que se construye? ¿qué son los servicios que presta una capa a otra? ¿y las unidades de
+información que se mencionan? ¿cuales son los modos de conexión? 
+->
+
+
+
+
+14. ¿Qué se indica en la cláusula 9? ¿Deberán llevar todos los estándares una cláusula como esta?
+¿Por qué es importante en este caso?
+->

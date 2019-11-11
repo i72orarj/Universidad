@@ -1,0 +1,129 @@
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                       %
+% La clase: 11pt o 10pt, es un draft o copia definitiva %
+% Que tipo de codificacion usa, ...                     %
+%                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,twoside,a4paper]{book}
+
+\usepackage{fancyhdr}
+%\usepackage{fancybox}
+\usepackage{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english,spanish, activeacute]{babel}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{floatflt}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+
+
+\renewcommand{\baselinestretch}{1.2}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                         %
+% Comenzamos el documento %
+%                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Algunos ajustes previos
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Martin Paez Anguita}
+
+\renewcommand\bibname{Bibliografia}
+\renewcommand\tablename{Tabla}
+
+\pagenumbering{arabic} \fancyhf{} \pagestyle{fancy}
+\fancyhead[LO]{\rightmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de sección
+\fancyhead[RE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de capítulo
+\fancyhead[RO,LE]{\thepage} % Números de página en las esquinas de los encabezados
+
+%Aumentamos el tamaño de la cabecera
+\setlength{\headheight}{14pt}
+
+
+\renewcommand{\sectionmark}[1]{\markright{{\thesection. #1}}} % Formato para la sección: N.M. Nombre
+
+
+
+%%%
+
+EJEMPLO: \\
+En este pequeño ejemplo se trata que veáis cómo funciona latex. Os he creado la estructura de un documento.
+Lo relativo a configuración. Ya es simplemente coger y añadir vuestro trabajo. Y el solo os creará el índice, la bibliografía, etc.
+Necesitáis del fichero \emph{biblio.bib} en formato BibTEX en el que tenéis que añadir las referencias bibliográficas que uséis en el formato específico.
+
+
+%con esto creamos el índice
+\tableofcontents
+
+
+
+%
+% Contenido TRABAJO
+%
+
+\chapter{Definición del Sistema}
+Definición general del sistema, qué servicios proporcionará y cuales serán sus posibles resultados. Definición de las métricas o índices de rendimiento que se usarán así como los parámetros que puedan afectar.
+
+\section{Objetivos y definición del sistema}
+Se debe de definir claramente qué se pretende y cuál es el sistema, para medirlo exclusivamente. Al definir el sistema se debe indicar configuraciones usadas en la instalación del sistema.
+
+\section{Servicios y sus posibles resultados}
+Un sistema puede dar un resultado válido, inválido o simplemente no dar ningún resultado, en cualquier caso, habrá que medir la tasa de sucesos de uno u otro tipo.
+
+\section{Métricas}
+Fijar los criterios para comparar prestaciones. Qué magnitudes vamos a usar.
+
+
+\section{Parámetros}
+Listar los parámetros que puedan afectar a las prestaciones. Las características del sistema serán iguales a igualdad de hardware y software.
+
+
+\chapter{Evaluación del Sistema}
+Definición de la experimentación a realizar. Qué evaluación se seguirá, cual será la carga de trabajo, qué experimentos se van a realizar y finalmente se analizarán los resultados de la experimentación.
+
+\section{Técnicas de evaluación}
+Qué técnica de evaluación se seguirá.
+
+\section{Carga de trabajo}
+Cual será la carga de trabajo, en qué consiste.
+
+\section{Diseño de Experimentos}
+Cómo se han diseñado los experimentos. En qué consiste la experimentación a realizar.
+
+\section{Análisis de los resultados}
+Estudio y análisis de los resultados provenientes de la experimentación. Tablas y gráficas con los datos (se requiere un número suficiente de muestras resultado de la experimentación)
+
+\chapter{Conclusiones y discusión}
+
+Conclusiones de consecución de objetivos planteados, a los experimentos
+desarrollados y crítica final en base al análisis de los datos.
+
+\section{Cuestiones}
+Como conclusión, ?qué cuestiones más relevantes te plantea el trabajo? Al menos 3 cuestiones junto con su respuesta.
+
+
+%% APENDICES
+%\ \newpage
+\appendix
+
+\renewcommand{\baselinestretch}{1.2}
+
+% BIBLIOGRAFIA
+\bibliography{biblio}
+\bibliographystyle{unsrt}
+
+\end{document}

@@ -1,0 +1,32 @@
+<%@ page import="java.io.FileInputStream"%>
+    <%@ page import="java.io.BufferedInputStream"%>
+        <%@ page import="java.io.File"%>
+            <%@ page import="java.io.IOException"%>
+                <%@ page import="java.io.BufferedOutputStream"%>
+
+                    <%	
+	String filename = request.getParameter("filename");	
+	try {				
+		FileInputStream fileIn = new FileInputStream(filename);
+		ServletOutputStream outS = response.getOutputStream();
+		//set response headers
+		response.setContentType("image/jpeg");
+		//response.setContentType("application/octet-stream");
+		response.addHeader("Content-Disposition","attachment; filename=" + filename);
+		//response.setContentLength((int) fileIn.length());
+		 
+		byte[] outputByte = new byte[4096];
+		//copy binary contect to output stream
+		while(fileIn.read(outputByte, 0, 4096) != -1)
+		{
+			outS.write(outputByte, 0, 4096);
+		}
+		fileIn.close();
+		outS.flush();
+		outS.close();
+	} catch (IOException ioe) {
+		throw new ServletException(ioe.getMessage());
+	}
+	out.clear();
+	out = pageContext.pushBody();
+%>
